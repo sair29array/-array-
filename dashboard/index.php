@@ -1,4 +1,5 @@
 <?php 
+require_once("config/conexion.php");
     session_start();
     
 	require_once("config/process.php");
@@ -29,17 +30,29 @@
 
     <!-- SB Admin CSS - Include with every page -->
     <link href="css/sb-admin.css" rel="stylesheet">
+    <link href="css/preload.css" rel="stylesheet">
 
 </head>
 
 <body>
-
+    <!--loader page -->
+    <div id="contenedor">
+        <div id="cargar"></div>
+    </div>
+    <!-- fin loader page -->
     <div id="wrapper">
 
         
     	<?php 
     if (isset($_SESSION['admin'])) 
+
       {
+        $eu = $_SESSION["admin"];
+        $admin_ = $sair->Get_info_admin($eu);
+        foreach ($admin_ as $adm) {
+            $email_admin = $adm["email"];
+            $id_admin = $adm["id"];
+        }
     		//Vista fija // Banner o header
     		include("views/fijas/header.php");
     		//Vista fija // menu
@@ -104,7 +117,15 @@
     <script src="js/plugins/dataTables/jquery.dataTables.js"></script>
     <script src="js/plugins/dataTables/dataTables.bootstrap.js"></script>
 
-
+    <!--Script Loader Page -->
+    <script type="text/javascript">
+        window.onload = function () {
+            var contenedor = document.getElementById('contenedor');
+        }
+        contenedor.style.visibility = 'hidden';
+        contenedor.style.opacity = '0';
+    </script>
+    <!-- FIN Script Loader Page -->
 
 </body>
 

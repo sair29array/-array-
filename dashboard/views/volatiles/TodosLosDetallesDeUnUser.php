@@ -16,12 +16,12 @@ foreach ($u as $user) {}
 ///////// 
 
 	include("detalles_de_un_user_en_particular/ActividadUser.php");
-	include("detalles_de_un_user_en_particular/PuntosYDescuentos.php");
+	/*include("detalles_de_un_user_en_particular/PuntosYDescuentos.php");
 	include("detalles_de_un_user_en_particular/ServiciosContratados.php");
-	include("detalles_de_un_user_en_particular/ProductosComprados.php");
+	//include("detalles_de_un_user_en_particular/ProductosComprados.php");
 	include("detalles_de_un_user_en_particular/RecibosPendientes.php");
 	include("detalles_de_un_user_en_particular/HistorialDePago.php");
-	include("detalles_de_un_user_en_particular/DatosPersonales.php");
+	include("detalles_de_un_user_en_particular/DatosPersonales.php");*/
 
 
 

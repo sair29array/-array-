@@ -42,10 +42,10 @@
 </ul>
 
 <!-- Tab panels -->
-<div class="tab-content card">
+<div class="tab-content">
     <!--Panel 1-->
    
-    <div v-if="Recursos " class="tab-pane fade in show active"  >
+    <div v-if="Recursos" class="tab-pane fade in show active">
         <br>
 
         <?php include("DesarrolloWeb.php"); ?>

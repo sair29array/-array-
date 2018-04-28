@@ -6,15 +6,7 @@
          <!--pre>{{$data}}</pre-->
 
 <!--Grid column-->
-        <div class="col-md-3 mb-r blue-text">
-            <a  v-on:click="ver(1)" >
-            	<div class="avatar">
-                <img src="img/icons/herramientasUser/dashboard.png" class="z-depth-1" alt="First sample avatar image">
-            </div>
-            <h4 class="mt-2">Tu actividad</h4>
-            </a>
-        </div>
-        <!--Grid column-->
+        
 
         <!--Grid column-->
         <div class="col-md-3 mb-r blue-text">
@@ -27,6 +19,16 @@
             
            </a>
 
+        </div>
+        <!--Grid column-->
+
+        <div class="col-md-3 mb-r blue-text">
+            <a  v-on:click="ver(1)" >
+                <div class="avatar">
+                <img src="img/icons/herramientasUser/dashboard.png" class="z-depth-1" alt="First sample avatar image">
+            </div>
+            <h4 class="mt-2">Servicios Contratados</h4>
+            </a>
         </div>
         <!--Grid column-->
 

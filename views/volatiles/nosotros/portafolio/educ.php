@@ -6,7 +6,7 @@
         <div class="row mb-lg-4 text-center text-md-left">
 
             <!--Grid column-->
-            <div class="col-lg-6 col-md-12 mb-4">
+            <!--div class="col-lg-6 col-md-12 mb-4">
 
                 <div class="col-md-6 float-left">
                     <div class="avatar mx-auto">
@@ -24,11 +24,11 @@
                    
                 </div>
 
-            </div>
+            </div-->
             <!--Grid column-->
 
              <!--Grid column-->
-            <div class="col-lg-6 col-md-12 mb-4">
+            <!--div class="col-lg-6 col-md-12 mb-4">
 
                 <div class="col-md-6 float-left">
                     <div class="avatar mx-auto">
@@ -46,7 +46,7 @@
                    
                 </div>
 
-            </div>
+            </div-->
             <!--Grid column-->
         </div>
         <!--Grid row-->

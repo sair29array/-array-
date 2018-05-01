@@ -11,12 +11,12 @@
    	 <!--Table head-->
     <thead>
         <tr>
-            <th>Producto</th>
-            <th>Estado</th>
-            <th>Fecha de compra</th>
-            <th>Precio</th>
-            <th>Cuotas</th>
-            <th></th>
+            <th class="font-weight-bold">Producto</th>
+            <th class="font-weight-bold">Estado</th>
+            <th class="font-weight-bold">Fecha de compra</th>
+            <th class="font-weight-bold">Precio</th>
+            <th class="font-weight-bold">Cuotas</th>
+            <th class="font-weight-bold"></th>
         </tr>
     </thead>
   <!--Table head-->

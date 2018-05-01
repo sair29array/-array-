@@ -1,9 +1,5 @@
 <?php  ?>
 
-<!--Carousel Wrapper Publicidad-->
-<!--Carousel Wrapper Publicidad-->
-<!--Carousel Wrapper Publicidad-->
-
 <!--Carousel Wrapper Publicitario -->
 <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
     <!--Indicators-->

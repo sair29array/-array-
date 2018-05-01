@@ -11,10 +11,11 @@
    	 <!--Table head-->
     <thead>
         <tr>
-            <th>Producto o servicio</th>
-            <th>Periodo</th>
-            <th>Expira</th>
-            <th>Precio</th>
+            <th class="font-weight-bold">Producto o servicio</th>
+            <th class="font-weight-bold">Pagar hasta</th>
+            <th class="font-weight-bold">Valor</th>
+            <th class="font-weight-bold">Facturas restantes</th>
+            <th class="font-weight-bold">Pagar</th>
         </tr>
     </thead>
   <!--Table head-->

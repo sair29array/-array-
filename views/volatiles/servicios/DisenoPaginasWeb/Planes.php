@@ -1,17 +1,17 @@
 
 <?php 
     //////// DISEÑO DE PAGINAS WEB - PLANES ///////////
-$PlanBasico = $sair->GetInfoPlan("diseño_paginas_web", 1);
+$PlanBasico = $sair->GetInfoPlan("diseno_paginas_web", 1);
 foreach ($PlanBasico as $planbasico) {
    $precio_plan_basico = number_format($planbasico["precio"] );
 }
 
-$PlanMedium = $sair->GetInfoPlan("diseño_paginas_web", 2);
+$PlanMedium = $sair->GetInfoPlan("diseno_paginas_web", 2);
 foreach ($PlanMedium as $pm) {
    $precio_plan_medium = number_format($pm["precio"] );
 }
 
-$PlanPremium = $sair->GetInfoPlan("diseño_paginas_web", 3);
+$PlanPremium = $sair->GetInfoPlan("diseno_paginas_web", 3);
 foreach ($PlanPremium as $pp) {
    $precio_plan_Premium = number_format($pp["precio"] );
 }

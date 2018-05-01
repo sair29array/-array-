@@ -7,22 +7,28 @@
 		$puntos = $puntos + $p["puntos"];
 	}
  ?>
-
-<h3  >Consulta general Puntos y descuentos &nbsp;&nbsp;<span class="badge amber darken-2">Puntos: <?php echo $puntos; ?></span>&nbsp;&nbsp;<a @click = "ver_herramientas = true" class="badge red text-white">Volver</a></h3>
+<div class="row text-center">
+    <div class="col-12  col-md-6 col-lg-8 align-self-center">
+        <h3 class="h3-responsive">Consulta general Puntos y descuentos</h3>                    
+    </div>
+    <div class="col-12 col-md-6 col-lg-4 align-self-center mt-2 mb-4">
+        <span class="bloque badge amber btn darken-2">Puntos: <?php echo $puntos; ?></span><a @click = "ver_herramientas = true" class="bloque badge btn red text-white">Volver</a>
+    </div>
+</div>
 
 
 	
 		<!--Table-->
-<table class="table table-responsive">
+<table class="table table-responsive-md">
 
     <!--Table head-->
     <thead class="blue-grey lighten-4">
         <tr>
             <th></th>
-            <th>Descuento</th>
-            <th>Aplica a</th>
-            <th>Motivo</th>
-            <th>Fin del descuento</th>
+            <th class="font-weight-bold">Descuento</th>
+            <th class="font-weight-bold">Aplica a</th>
+            <th class="font-weight-bold">Motivo</th>
+            <th class="font-weight-bold">Fin del descuento</th>
             <th></th>
         </tr>
     </thead>

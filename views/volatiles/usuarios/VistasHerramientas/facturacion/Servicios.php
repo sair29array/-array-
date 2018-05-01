@@ -11,12 +11,12 @@
    	 <!--Table head-->
     <thead>
         <tr>
-            <th>Servicio</th>
-            <th>Estado</th>
-            <th>Activo desde</th>
-            <th>Expira</th>
-            <th>Precio de renovación</th>
-            <th></th>
+            <th class="font-weight-bold">Servicio</th>
+            <th class="font-weight-bold">Estado</th>
+            <th class="font-weight-bold">Activo desde</th>
+            <th class="font-weight-bold">Expira</th>
+            <th class="font-weight-bold">Valor de la cuota</th>
+            <th class="font-weight-bold"></th>
         </tr>
     </thead>
   <!--Table head-->

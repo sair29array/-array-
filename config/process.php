@@ -838,7 +838,7 @@
         public function Get_actividad_user($id_user)
         {
              include("conexion.php");
-            $consult = mysqli_query($conn, "SELECT * FROM contratos_servicios_users Where id_usuario = '$id_user' ");
+            $consult = mysqli_query($conn, "SELECT * FROM contratos_servicios_users Where id_usuario = '$id_user' AND contrato_activo = 1 ORDER BY id_solicitud DESC");
 
              return $consult;
 

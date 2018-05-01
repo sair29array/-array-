@@ -1,77 +1,69 @@
-
 <section v-if="!UpdateDataUser" class="section text-justify" id="v_Updatedata">
-
-   <h3  >Consulta general-Tu información personal &nbsp;&nbsp;<a @click = "ver_herramientas = true" class="badge red text-white">Volver</a><a @click = "UpdateDataUser = true" class="badge blue text-white">Actualizar</a></h3> <br>
+        <div class="row text-center">
+            <div class="col-12  col-md-6 col-lg-8 align-self-start">
+                <h3 class="h3-responsive text-uppercase  text-center">Consulta general: Tu información personal</h3>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 align-self-center mt-2 mb-4">
+                <a @click = "ver_herramientas = true" class=" bloque badge red text-white btn">Volver</a><a @click = "UpdateDataUser = true" class="bloque badge blue btn text-white">Actualizar</a>
+            </div>
+        </div>
 
     <div class="row">
- <!--Grid column-->
+        <!--Grid column-->
         <div class="col-md-12 col-xl-12">
-             <!--Grid row-->
-            <div class="row">
-                <div class="col-md-6">
-    <table class="table table-responsive">
-    <!--Table body-->
-    <tbody>
-        <tr>
-        <td>Nombres:</td>
-        <td><?php echo $user_["nombres"]; ?></td>
-        </tr>
+        <table class="table table-responsive-md table-hover">
+            <!--Table body-->
+            <tbody>
+                <tr>
+                <td class="font-weight-bold">Nombres:</td>
+                <td><?php echo $user_["nombres"]; ?></td>
+                </tr>
 
-        <tr>
-        <td>Apellidos:</td>
-        <td><?php echo $user_["apellidos"]; ?></td>
-        </tr>
+                <tr>
+                <td class="font-weight-bold">Apellidos:</td>
+                <td><?php echo $user_["apellidos"]; ?></td>
+                </tr>
 
-        <tr>
-        <td>Cedula:</td>
-        <td><?php echo $user_["cedula"]; ?></td>
-        </tr>
+                <tr>
+                <td class="font-weight-bold">Cedula:</td>
+                <td><?php echo $user_["cedula"]; ?></td>
+                </tr>
 
-         <tr>
-        <td>Email:</td>
-        <td><?php echo $user_["email"]; ?></td>
-        </tr>
+                <tr>
+                <td class="font-weight-bold">Email:</td>
+                <td><?php echo $user_["email"]; ?></td>
+                </tr>
 
-         <tr>
-        <td>Celular:</td>
-        <td><?php echo $user_["celular"]; ?></td>
-        </tr>
+                <tr>
+                <td class="font-weight-bold">Celular:</td>
+                <td><?php echo $user_["celular"]; ?></td>
+                </tr>
 
 
-        <tr>
-        <td>Ubicación:</td>
-        <td><?php echo $user_["departamento_ciudad"]; ?></td>
-        </tr>
+                <tr>
+                <td class="font-weight-bold">Ubicación:</td>
+                <td><?php echo $user_["departamento_ciudad"]; ?></td>
+                </tr>
 
-        <tr>
-        <td>Empresa:</td>
-        <td><?php echo $user_["empresa"]. " Nit: " . $user_["nit_empresa"]; ?></td>
-        </tr>
+                <tr>
+                <td class="font-weight-bold">Empresa:</td>
+                <td><?php echo $user_["empresa"]. " Nit: " . $user_["nit_empresa"]; ?></td>
+                </tr>
 
-        
-        
-    </tbody>
-    <!--Table body-->
-</table>
-
-<!--Table-->
-<script>
-    $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-</script>
-<a href="./?:=Politicas-de-Privacidad" data-toggle="tooltip" data-placement="top" title="Conoce la Política de datos de Array">¿Por qué tengo que facilitar mis datos personales?</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
+                
+                
+            </tbody>
+            <!--Table body-->
+        </table>
+        </div>  
+        <script>
+            $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        })
+        </script>
+        <a href="./?:=Politicas-de-Privacidad" class="text-center" data-toggle="tooltip" data-placement="top" title="Conoce la Política de datos de Array">¿Por qué tengo que facilitar mis datos personales?</a>
+    </div>                    
 </section>
-
-
-
-
-
                             
 <section v-if="UpdateDataUser" class="section text-justify" id="v_Updatedata">
 
@@ -80,7 +72,15 @@
 ///// si tiene actividad o contratos con nosotros, no puede editar su numero de cedula porque el contrato se acordó con el tutular de la misma
 $actividad_empresa_user = $sair->verificar_actividad_user_Empresa($user_["id"]); // Esta función se encargará de consultar si la emprpesa del user logueado tiene actividad con nosotros
  ?>
-    <h3  >Actualiza tu  información &nbsp;&nbsp;<a @click = "UpdateDataUser = false" class="badge red text-white">Volver</a></h3> <br>
+    <div class="row text-center justify-content-center">
+            <div class="col-12  col-md-6  align-self-center">
+                <h3 class="h3-responsive">Actualiza tu  información</h3>
+            </div>
+            <div class="col-12 col-md-6 align-self-center mt-2 mb-4">
+                <a @click = "UpdateDataUser = false" class=" btn badge red text-white">Volver</a>
+            </div>
+        </div>
+    
 
     <div class="row">
 
@@ -93,7 +93,7 @@ $actividad_empresa_user = $sair->verificar_actividad_user_Empresa($user_["id"]);
 
                     <!--Grid column-->
                     <div class="col-md-6">
-                    	<label for="name" class="">Nombres:</label>  
+                    	<label for="name" class="font-weight-bold">Nombres:</label>  
                         <div class="md-form">
                             <input type="text" class="form-control" name="nombres" value="<?php echo $user_["nombres"]; ?>">                            
                         </div>
@@ -102,7 +102,7 @@ $actividad_empresa_user = $sair->verificar_actividad_user_Empresa($user_["id"]);
 
                     <!--Grid column-->
                     <div class="col-md-6">
-                    	<label for="email" class="">Apellidos:</label>
+                    	<label for="email" class="font-weight-bold">Apellidos:</label>
                         <div class="md-form">
                             <input type="text" id="email" name="apellidos" class="form-control" value="<?php echo $user_["apellidos"]; ?>">
                         </div>
@@ -118,7 +118,7 @@ $actividad_empresa_user = $sair->verificar_actividad_user_Empresa($user_["id"]);
                                
                     <!--Grid column-->
                     <div class="col-md-6">
-                        <label for="email" class="">Cedula:</label>
+                        <label for="email" class="font-weight-bold">Cedula:</label>
                         <div class="md-form">
                             <input  type="number" id="email" name="cedula" class="form-control " value="<?php echo $user_["cedula"]; ?>">
                         </div>
@@ -130,7 +130,7 @@ $actividad_empresa_user = $sair->verificar_actividad_user_Empresa($user_["id"]);
                         ?>
                                 <!--Grid column-->
                             <div class="col-md-6 ">
-                                <label for="email" class="">Cedula:</label>
+                                <label for="email" class="font-weight-bold">Cedula:</label>
                                 <div class="md-form">
                                     <input disabled="true"  type="number" id="cedula" name="cedula" class="form-control " value="<?php echo $user_["cedula"]; ?>">
                                 </div>
@@ -145,7 +145,7 @@ $actividad_empresa_user = $sair->verificar_actividad_user_Empresa($user_["id"]);
                       
                     <!--Grid column-->
                     <div class="col-md-6">
-                    	<label for="email" class="">Ubicación:</label>
+                    	<label for="email" class="font-weight-bold">Ubicación:</label>
                         <div class="md-form">
                             <input type="text" id="email" name="ubicacion" class="form-control" value="<?php echo $user_["departamento_ciudad"]; ?>">
                         </div>
@@ -163,7 +163,7 @@ $actividad_empresa_user = $sair->verificar_actividad_user_Empresa($user_["id"]);
                             ?>
                             <!--Grid column-->
                             <div class="col-md-6">
-                                <label for="name" class="">Nit empresa:</label>
+                                <label for="name" class="font-weight-bold">Nit empresa:</label>
                                 <div class="md-form">
                                     <input type="number" id="name" name="nit_empresa" class="form-control" value="<?php echo $user_["nit_empresa"]; ?>">
                                 </div>
@@ -172,7 +172,7 @@ $actividad_empresa_user = $sair->verificar_actividad_user_Empresa($user_["id"]);
 
                             <!--Grid column-->
                             <div class="col-md-6">
-                                <label for="email" class="">Empresa:</label>
+                                <label for="email" class="font-weight-bold">Empresa:</label>
                                 <div class="md-form">
                                     <input type="text" id="email" name="empresa" class="form-control" value="<?php echo $user_["empresa"]; ?>">
                                 </div>
@@ -185,7 +185,7 @@ $actividad_empresa_user = $sair->verificar_actividad_user_Empresa($user_["id"]);
 
                                 <!--Grid column-->
                             <div class="col-md-6">
-                                <label for="name" class="">Nit empresa: </label>
+                                <label for="name" class="font-weight-bold">Nit empresa: </label>
                                 <div class="md-form">
                                     <input disabled="true" type="number" id="name" name="nit_empresa" class="form-control" value="<?php echo $user_["nit_empresa"]; ?>">
                                 </div>
@@ -194,7 +194,7 @@ $actividad_empresa_user = $sair->verificar_actividad_user_Empresa($user_["id"]);
 
                             <!--Grid column-->
                             <div class="col-md-6">
-                                <label for="email" class="">Empresa:</label>
+                                <label for="email" class="font-weight-bold">Empresa:</label>
                                 <div class="md-form">
                                     <input disabled="true" type="text" id="email" name="empresa" class="form-control" value="<?php echo $user_["empresa"]; ?>">  
                                 </div>
@@ -211,7 +211,7 @@ $actividad_empresa_user = $sair->verificar_actividad_user_Empresa($user_["id"]);
                 <div class="row">
                     <!--Grid column-->
                     <div class="col-md-6">
-                    	<label for="name" class="">Email:</label>
+                    	<label for="name" class="font-weight-bold">Email:</label>
                         <div class="md-form">
                             <input type="text" id="name" name="email" class="form-control" value="<?php echo $user_["email"]; ?>">
                         </div>
@@ -220,18 +220,15 @@ $actividad_empresa_user = $sair->verificar_actividad_user_Empresa($user_["id"]);
 
                     <!--Grid column-->
                     <div class="col-md-6">
-                    	<label for="email" class="">Celular:</label>
+                    	<label for="email" class="font-weight-bold">Celular:</label>
                         <div class="md-form">
                             <input type="text" id="email" name="celular" class="form-control" value="<?php echo $user_["celular"]; ?>">
                         </div>
                     </div>
                     <!--Grid column-->
-
-
                 </div>
-
-                 <div class="center-on-small-only">
-                <button name="update" class="btn btn-primary" type="submit">Actualizar</button>
+                 <div class="text-center">
+                    <button name="update" class="btn btn-primary" type="submit">Actualizar</button>
                 </div>
                 <!--Grid row-->
                 <br><br>
@@ -250,8 +247,8 @@ $actividad_empresa_user = $sair->verificar_actividad_user_Empresa($user_["id"]);
                 <div class="row">
                     <!--Grid column-->
                     <div class="col-md-4">
-                        <label  v-if="actualpass === ''" for="name" class="">Contraseña Actual:</label>
-                        <label v-else-if="actualpass != '' " for="name" class="">Contraseña Actual: <i v-if="actualpass === passw" class="fa fa-check"></i> <i v-else-if="actualpass != passw" class="fa fa-times"></i> </label>
+                        <label  v-if="actualpass === ''" for="name" class="font-weight-bold">Contraseña Actual:</label>
+                        <label v-else-if="actualpass != '' " for="name" class="font-weight-bold">Contraseña Actual: <i v-if="actualpass === passw" class="fa fa-check"></i> <i v-else-if="actualpass != passw" class="fa fa-times"></i> </label>
                         <div class="md-form">
                             <input type="password" id="name"  v-model="actualpass" class="form-control">
                         </div>
@@ -260,7 +257,7 @@ $actividad_empresa_user = $sair->verificar_actividad_user_Empresa($user_["id"]);
 
                     <!--Grid column-->
                     <div class="col-md-4">
-                        <label for="email" class="">Nueva Contraseña:</label>
+                        <label for="email" class="font-weight-bold">Nueva Contraseña:</label>
                         <div class="md-form">
                             <input type="password" id="email"  v-model="newpass" class="form-control" >
                         </div>
@@ -268,8 +265,8 @@ $actividad_empresa_user = $sair->verificar_actividad_user_Empresa($user_["id"]);
                     <!--Grid column-->
                     <!--Grid column-->
                     <div class="col-md-4">
-                         <label  v-if="confirmnewpass === ''" for="name" class="">Confirmar contraseña nueva: </label>
-                        <label v-else-if="confirmnewpass != '' " for="name" class="">Confirmar contraseña nueva: <i v-if="confirmnewpass === newpass" class="fa fa-check"></i> <i v-else-if="confirmnewpass != newpass" class="fa fa-times"></i> </label>
+                         <label  v-if="confirmnewpass === ''" for="name" class="font-weight-bold">Confirmar contraseña nueva: </label>
+                        <label v-else-if="confirmnewpass != '' " for="name" class="font-weight-bold">Confirmar contraseña nueva: <i v-if="confirmnewpass === newpass" class="fa fa-check"></i> <i v-else-if="confirmnewpass != newpass" class="fa fa-times"></i> </label>
                         <div class="md-form">
                             <input type="password" id="email"  v-model="confirmnewpass" class="form-control" >
                         </div>

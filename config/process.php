@@ -438,6 +438,14 @@
             return $consulta;
         }
 
+
+        public function GetContratoEnParticular($id_contrato_o_solicitud) /// esta funcion devuelve la info de un contrato activo al user mediante el ID del mismo contrato 
+        {
+          include("conexion.php");
+            $consult = mysqli_query($conn, "SELECT * FROM contratos_servicios_users WHERE id_solicitud = '$id_contrato_o_solicitud'  ");
+            return $consult;
+        }
+
 /////Este codigo fué escrito por sair sanchez valderrama --- propiedad intelectual de sair sanchez valderrama //////// Código creado por sair sanchez valderrama 
 
 
@@ -860,6 +868,17 @@
         {
             include("conexion.php");
             $consult = mysqli_query($conn, "SELECT * FROM puntos_descuentos Where id_usuario = '$id_user' ");
+             return $consult;
+        }
+
+
+
+
+        public function GetRecibosDePagoPara($id_user)
+        {
+          include("conexion.php");
+            $consult = mysqli_query($conn, "SELECT * FROM user_recibos_de_pago_servicios Where id_user = '$id_user' AND factura_pagada = 0 "); /// si la factura pagada es iagual a 0 , quiere decir que no ha sido pagada la factura y que por ende debe mostrarse en la tabla de recibos pendientes de pago 
+
              return $consult;
         }
 

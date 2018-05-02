@@ -1,4 +1,9 @@
-<?php  ?>
+<?php 
+
+       //$contratos_activos = $sair->GetAllContratosServiciosActivos();
+       $facturas_servicios = $sair->GetRecibosDePagoPara($user_["id"]);
+
+ ?>
 
 
 
@@ -11,11 +16,84 @@
    	 <!--Table head-->
     <thead>
         <tr>
-            <th class="font-weight-bold">Producto o servicio</th>
-            <th class="font-weight-bold">Pagar hasta</th>
-            <th class="font-weight-bold">Valor</th>
-            <th class="font-weight-bold">Facturas restantes</th>
-            <th class="font-weight-bold">Pagar</th>
+            <th class="font-weight">Servicio</th>
+            <th class="font-weight">Tipo de factura</th>
+            <th class="font-weight">Número de factura</th> <!-- ejemplo. 5 de 12 -->
+            <th class="font-weight">Valor</th>
+            <th class="font-weight">Pagar hasta</th>
+            <th class="font-weight">Mora</th>
+            <th class="font-weight"><i class="fa fa-chevron-down"></i></th>
+        </tr>
+    </thead>
+  <!--Table head-->
+
+    <!--Table body-->
+    <tbody>
+       
+       <?php 
+            foreach ($facturas_servicios as $fas) {
+                $info_contrato = $sair-> GetContratoEnParticular($fas["id_contrato_activo"]);
+                $servicio = $info_contrato["servicio"];
+                $cuotas = $info_contrato["cuota_plazo"];
+                ?>
+                 <tr>
+                    <td><?php echo $servicio; ?></td>
+                    <td><?php echo $fas["tipo_factura"]; ?></td>
+                    <td><?php echo $fas["numero_factura"] . " de " . $cuotas; ?></td>
+                    <td><?php echo $fas["valor"]; ?></td>
+                    <td><?php echo $fas["fecha_limite_de_pago"]; ?></td>
+                    <td><?php echo $fas["dias_de_atraso_mora"]; ?></td>
+                    <td><button class="btn btn-primary"><i class="fa fa-money"></i> Pagar ahora</button></td>
+                </tr>
+                <?php 
+            }
+        ?>
+       
+    </tbody>
+    <!--Table body-->
+
+</div>
+</table>
+<!--Table-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="table table-responsive">
+<div class="justify-content-center">
+
+     <!--Table head-->
+    <thead>
+        <tr>
+            <th class="font-weight">Producto</th>
+            <th class="font-weight">Tipo de factura</th>
+            <th class="font-weight">Número de factura</th> <!-- ejemplo. 5 de 12 -->
+            <th class="font-weight">Valor</th>
+            <th class="font-weight">Pagar hasta</th>
+            <th class="font-weight">Mora</th>
+            <th class="font-weight"><i class="fa fa-chevron-down"></i></th>
         </tr>
     </thead>
   <!--Table head-->
@@ -23,10 +101,13 @@
     <!--Table body-->
     <tbody>
         <tr>
-            <th scope="row">Radio Streaming HD</th>
-            <td>Trimertralmente (paga cada tres meses)</td>
-            <td>Día 12 de cada mes</td>
-            <td>$50.000</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
        
     </tbody>

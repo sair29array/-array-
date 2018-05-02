@@ -73,7 +73,8 @@
                             <h4> <strong>Producción de comerciales para radio,TV e internet</strong></h4>
                             <p >Comerciales en formato .mp3 y videos institucionales HD que se adaptan a los propósitos de su empresa.
                             </p>
-                            <a class="boton3 btn btn-md" href="./?servicios=ProdComerciales">CONTRATAR</a>
+                            <!-- ./?servicios=ProdComerciales -->
+                            <a class="boton3 btn btn-md" href="">CONTRATAR</a>
                         </div>
                     </div>
                 </div>
@@ -87,7 +88,7 @@
                             <h4> <strong>Foto Estudio y realización Audiovisual</strong></h4>
                             <p>Fotografiamos y filmamamos eventos sociales, combinamos tecnologia de vanguardia con profesionales capacitados.
                             </p>
-                            <a class="boton3 btn btn-md" href="./?servicios=Diseño_De_Paginas_web">CONTRATAR</a>
+                            <a class="boton3 btn btn-md" href="">CONTRATAR</a>
                         </div>
                     </div>
                 </div>

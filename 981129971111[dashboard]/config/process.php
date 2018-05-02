@@ -35,7 +35,7 @@
 		public function logout()
 		{
 			session_destroy();
-			header('Location: ../dashboard ');
+			header('Location: ../981129971111[dashboard]');
 		}
 
 

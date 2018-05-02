@@ -11,7 +11,7 @@
 <!-- Nav tabs -->
 <ul class="nav nav-tabs nav-justified">
     <li class="nav-item">
-        <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab">RECIBOS PENDIENTES DE PAGO</a>
+        <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab">RECIBOS DE PAGO PENDIENTES</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" data-toggle="tab" href="#panel2" role="tab">SERVICIOS</a>

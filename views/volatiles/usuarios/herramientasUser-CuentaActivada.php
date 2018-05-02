@@ -33,24 +33,24 @@
         <!--Grid column-->
 
         <!--Grid column-->
-        <div class="col-md-3 mb-r blue-text">
+        <!--div class="col-md-3 mb-r blue-text">
         	<a v-on:click="ver(3)">
         		<div class="avatar">
                 <img src="img/icons/herramientasUser/points.png" c alt="Third sample avatar image">
             </div>
             <h4 class="mt-2">Puntos y descuentos</h4>
         	</a>
-        </div>
+        </div-->
         <!--Grid column-->
         <!--Grid column-->
-        <div class="col-md-3 mb-r blue-text">
+        <!--div class="col-md-3 mb-r blue-text">
         	<a v-on:click="ver(4)">
         		   <div class="avatar">
                 <img src="img/icons/herramientasUser/clerk.png" c alt="Third sample avatar image">
             </div>
             <h4 class="mt-2">Sugerencias para ti</h4>
         	</a>
-        </div>
+        </div-->
         <!--Grid column-->
         <!--Grid column-->
         <div class="col-md-3 mb-r blue-text">

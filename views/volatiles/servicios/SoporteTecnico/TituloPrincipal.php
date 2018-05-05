@@ -20,12 +20,25 @@
                 		if (!isset($_GET["reg_empresa"]) ) {
                 		?> 
                 	
-                	<a href="./?servicios=MantSoporteTécnico&datos">
+                	<?php 
+                    if ($user_["dealta"]==1) {
+                        ?> <a href="./?servicios=MantSoporteTécnico&datos">
                         <button type="button" name="solicitar_servicio" class="btn boton-c btn-md mb-5">
                         Solicitar
                             <i class="fa fa-caret-right"></i>
                     </button>
-                    </a>
+                    </a> <?php 
+                    }else
+                    {
+                        ?> <a href="./?:=serviceResp8/8800/22/s-act_n8ll">
+                        <button type="button" name="solicitar_servicio" class="btn boton-c btn-md mb-5">
+                        Solicitar
+                            <i class="fa fa-caret-right"></i>
+                    </button>
+                    </a> <?php 
+                    }
+
+                     ?>
 
                     <?php }else{ // si el usuario llegó a el form de empresa
                     	    if (isset($_SESSION["user_log"]))

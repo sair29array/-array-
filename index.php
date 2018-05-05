@@ -199,7 +199,11 @@ switch (@$_GET["servicios"])
             include("views/volatiles/usuarios/miCuenta.php");
         }else if (@$_GET[":"]=="Politicas-de-Privacidad") {
             include("views/volatiles/nosotros/politicas.php");
+        }else if (@$_GET[":"]=="serviceResp8/8800/22/s-act_n8ll") {
+            ?><script>location.href="./?:=MiCuenta"</script> <?php 
         }
+
+
 
 
         // para las vistas de los servicios

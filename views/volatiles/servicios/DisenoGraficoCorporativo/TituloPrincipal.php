@@ -13,7 +13,19 @@
 <?php if (!isset($_POST['continuar_'])  && !isset($_GET["solicitud"]) && !isset($_GET["solicitud-enviada"])){  ?>
                 <div class="col-12 col-md-3 mt-4  wow zoomIn" data-wow-delay="0.4s">
                     <h3 class="mt-5 mb-0"></h3>
-                     <button  type="submit" name="continuar_" class="btn boton-c btn-md mb-5">Continuar <i class="fa fa-caret-right"></i></button>
+                    <?php 
+                      if ($user_["dealta"] == 1) {
+                        ?>
+                         <button  type="submit" name="continuar_" class="btn boton-c btn-md mb-5">Continuar <i class="fa fa-caret-right"></i></button>
+                        <?php 
+                      }else{
+                        ?>
+                          <a class="btn boton-c btn-md mb-5" href="./?:=serviceResp8/8800/22/s-act_n8ll">
+                            Continuar <i class="fa fa-caret-right"></i>
+                          </a>
+                        <?php 
+                      }
+                     ?>
                 </div>
  <?php }else{
  	      if (isset($_SESSION["user_log"])  && !isset($_GET["solicitud-enviada"])){ 

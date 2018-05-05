@@ -25,7 +25,7 @@ if ($s_["contrato_activo"]==0) {/// si no está activo aun el contrato
         $tc = $_POST["tcobrar"];
         $c = $_POST["Cuotas"];
         $n = $_POST["notas"];
-        $fecha_activacion = date("d") ."-".date("m")."-20". date("y") ;
+        $fecha_activacion = date("d") ."-".date("m")."-". date("Y") ;
         $validacion_datos = $sair->verificar_si_los_datos_para_activar_un_contrato_estan_completos($u_["id"]);
         if ($validacion_datos == true) 
         {

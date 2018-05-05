@@ -9,7 +9,7 @@
 			
 		
         <!--Title-->
-        <h4 class="card-title"><strong>Para usar tus herramientas, debes activar tu cuenta.</strong></h4>
+        <h2 class="card-title"><strong>Para contratar nuestros servicios y usar tus herramientas, debes activar tu cuenta.</strong></h2>
         <h5 class="indigo-text"><strong>
         	<?php if (!isset($_GET["r"])) {
         		?>Visita tu correo electrónico. Hemos enviado un e-mail de activación el día que te uniste a Array. <?php 

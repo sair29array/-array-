@@ -1,7 +1,6 @@
 <?php 
 require_once("config/conexion.php");
     session_start();
-    
 	require_once("config/process.php");
 	$sair = new process();
     if (isset($_GET["Logout"])) 
@@ -47,6 +46,68 @@ require_once("config/conexion.php");
     if (isset($_SESSION['admin'])) 
 
       {
+        ///////Archivo que realiza tareas automaticas en el sistema ... por ejemplo él es el encargado de crear las facturas de los users
+        require_once("config/ControladorDeTareasAutomaticas.php");
+        $Ejecutar = new main();
+       
+    
+        if ($Ejecutar->ConfirmacionProcess() != 0) 
+        {
+            ?>
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <br>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Controladores Automaticos
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <?php if ($Ejecutar->IssetFactsToday() != 0) 
+                            {
+                                # quiere decir que si hay facturas pór hacer
+                                /// entonces: 
+                                 ?>
+                                    <div class="alert alert-info">
+                                     Cargando controladores de facturación...
+                                    </div>
+                                 <?php 
+                                 $Ejecutar -> Creacion_facturas_servicios_para_hoy(); /// revisa si hay facturas para crear en la fecha actual y las crea
+                                
+                            } 
+
+                            ?>
+                            
+                           
+                        </div>
+                        <!-- .panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+            </div>
+        </div>
+            <?php 
+        }
+        ////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////
+        if ($Ejecutar->IssetAccesAdmin() == 0 ) // si no hay acceso registrado 
+         {
+            /// entonces  registramos el acceso del user :
+            $Ejecutar->RegistroAccesoUserAdMIN($_SESSION["admin"]);
+            //header ("Location: ./?");
+            ?><script>location.href= "./";</script> <?php    
+            // y retornamos ...   
+        }
+          
+
         $eu = $_SESSION["admin"];
         $admin_ = $sair->Get_info_admin($eu);
         foreach ($admin_ as $adm) {

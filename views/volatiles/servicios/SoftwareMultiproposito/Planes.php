@@ -22,7 +22,14 @@ foreach ($PlanPremium as $pp) {
                         <div class="col-12 col-sm-6 col-md-4 mt-5 mb-2 wow zoomIn" data-wow-delay="0.4s">
                             <div align="center">
                                 <div class="card" >
-                                    <a href="./?servicios=Sofware-Multipropósito&solicitud=plan-escritorio">
+                                    
+                                    <?php 
+                                        if ($user_["dealta"]==1) {
+                                            ?> <a href="./?servicios=Sofware-Multipropósito&solicitud=plan-escritorio"> <?php 
+                                        }else{
+                                            ?><a href="./?:=serviceResp8/8800/22/s-act_n8ll"> <?php 
+                                        }
+                                     ?>
                                         
                                         <div class="card-header stylish-color white-text">
                                         <span class="h2-responsive mb-0 " >Aplicaciones para escritorio </span>
@@ -58,7 +65,13 @@ foreach ($PlanPremium as $pp) {
                                             
 
                                             <div class="card-footer text-center">
-                                                <a href="./?servicios=Sofware-Multipropósito&solicitud=plan-escritorio"><button class="btn boton-c btn-md">Solicitar</button></a>
+                                                <?php 
+                                                    if ($user_["dealta"]==1) {
+                                                        ?> <a href="./?servicios=Sofware-Multipropósito&solicitud=plan-escritorio"><button class="btn boton-c btn-md">Solicitar</button></a> <?php 
+                                                    }else{
+                                                        ?> <a href="./?:=serviceResp8/8800/22/s-act_n8ll"><button class="btn boton-c btn-md">Solicitar</button></a><?php 
+                                                    }
+                                                 ?>
                                             </div>
                                         </div>
                                     </div>
@@ -68,7 +81,15 @@ foreach ($PlanPremium as $pp) {
                         <div class="col-12 col-sm-6 col-md-4 mt-5 mb-5 wow zoomIn" data-wow-delay="0.4s">
                             <div align="center">
                                 <div class="card">
-                                    <a href="./?servicios=Sofware-Multipropósito&solicitud=plan-web">
+                                    
+
+                                         <?php 
+                                        if ($user_["dealta"]==1) {
+                                            ?> <a href="./?servicios=Sofware-Multipropósito&solicitud=plan-web"> <?php 
+                                        }else{
+                                            ?><a href="./?:=serviceResp8/8800/22/s-act_n8ll"> <?php 
+                                        }
+                                     ?>
                                         <div class="card-header primary-color white-text">
                                         <span class="h2-responsive mb-0">Aplicaciones para la web</span>
                                         <hr>
@@ -114,7 +135,15 @@ foreach ($PlanPremium as $pp) {
 
                                     </div>
                                      <div class="card-footer text-center">
-                                                <a href="./?servicios=Sofware-Multipropósito&solicitud=plan-web"><button class="btn boton-c btn-md">Solicitar</button></a>
+                                                
+
+                                                <?php 
+                                                    if ($user_["dealta"]==1) {
+                                                        ?> <a href="./?servicios=Sofware-Multipropósito&solicitud=plan-web"><button class="btn boton-c btn-md">Solicitar</button></a> <?php 
+                                                    }else{
+                                                        ?> <a href="./?:=serviceResp8/8800/22/s-act_n8ll"><button class="btn boton-c btn-md">Solicitar</button></a><?php 
+                                                    }
+                                                 ?>
                                      </div>
                                 </div>
                             </div>
@@ -122,7 +151,14 @@ foreach ($PlanPremium as $pp) {
                         <div class="col-12 col-sm-6 col-md-4 mt-5 mb-5 wow zoomIn" data-wow-delay="0.4s">
                             <div align="center">
                                 <div class="card">
-                                    <a href="./?servicios=Sofware-Multipropósito&solicitud=plan-moviles">
+                                    
+                                         <?php 
+                                        if ($user_["dealta"]==1) {
+                                            ?> <a href="./?servicios=Sofware-Multipropósito&solicitud=plan-moviles"> <?php 
+                                        }else{
+                                            ?><a href="./?:=serviceResp8/8800/22/s-act_n8ll"> <?php 
+                                        }
+                                     ?>
                                         <div class="card-header stylish-color white-text">
                                         <span class="h2-responsive mb-0">Aplicaciones para Android</span>
                                         <hr>
@@ -160,7 +196,15 @@ foreach ($PlanPremium as $pp) {
 
                                     </div>
                                     <div class="card-footer text-center" >
-                                                <a href="./?servicios=Sofware-Multipropósito&solicitud=plan-moviles"><button class="btn boton-c btn-md">Solicitar</button></a>
+                                                
+
+                                                <?php 
+                                                    if ($user_["dealta"]==1) {
+                                                        ?> <a href="./?servicios=Sofware-Multipropósito&solicitud=plan-moviles"><button class="btn boton-c btn-md">Solicitar</button></a> <?php 
+                                                    }else{
+                                                        ?> <a href="./?:=serviceResp8/8800/22/s-act_n8ll"><button class="btn boton-c btn-md">Solicitar</button></a><?php 
+                                                    }
+                                                 ?>
                                     </div>
                                 </div>
                             </div>

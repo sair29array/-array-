@@ -54,7 +54,11 @@
                       </div>
 
                       <!-- Card content -->
-                      <div class="card-body">
+                      <?php 
+
+                        if ($user_["dealta"] == 1) {
+                          ?>
+                          <div class="card-body">
 
                         <!-- Title -->
                         <h4 class="card-title">   Notificaciones <i style="cursor: pointer;" @click = "notificaciones = false"  class=" fa fa-times"></i></h4>
@@ -70,6 +74,9 @@
                         
 
                       </div>
+                          <?php 
+                        }
+                       ?>
 
                     </div>
                     <!-- Card -->

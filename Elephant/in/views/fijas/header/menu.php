@@ -15,7 +15,7 @@
             <div class="list-group list-group-flush p-3">
 
                 <a href="#" class="list-group-item active waves-effect">
-                    <i class="fa fa-pie-chart mr-3"></i>Dashboard
+                    <i class="fa fa-list mr-3"></i>Temario
                 </a>
                 <a href="#" class="list-group-item list-group-item-action waves-effect">
                     <i class="fa fa-user mr-3"></i>Profile</a>

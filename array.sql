@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-04-2018 a las 22:40:37
+-- Tiempo de generación: 05-05-2018 a las 05:36:00
 -- Versión del servidor: 10.1.31-MariaDB
 -- Versión de PHP: 7.1.15
 
@@ -25,6 +25,19 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `acceso_admin_controller`
+--
+
+CREATE TABLE `acceso_admin_controller` (
+  `id_acceso` int(11) NOT NULL,
+  `fecha` varchar(50) NOT NULL,
+  `hora` varchar(30) NOT NULL,
+  `user_admin` varchar(60) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `admin_user`
 --
 
@@ -39,7 +52,9 @@ CREATE TABLE `admin_user` (
 --
 
 INSERT INTO `admin_user` (`id`, `email`, `pass`) VALUES
-(1, 'sairsanchez29@gmail.com', '123456');
+(2, 'admin@admin', 'admin'),
+(3, 'secretary@adminarray', '123456'),
+(4, 'sairsanchez@array.com.co', '981129');
 
 -- --------------------------------------------------------
 
@@ -52,39 +67,31 @@ CREATE TABLE `contratos_servicios_users` (
   `id_usuario` int(11) NOT NULL,
   `servicio` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
   `id_plan_escojido` varchar(10000) COLLATE utf8_spanish_ci NOT NULL,
+  `nombre_plan` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
   `facturacion_a_empresa` int(11) NOT NULL,
   `total_cobrar` int(11) NOT NULL,
   `cuota_plazo` int(11) NOT NULL,
+  `valor_por_cuota` int(11) NOT NULL,
+  `dia_defacturacion` int(11) NOT NULL,
+  `fecha_finalizacion` varchar(30) COLLATE utf8_spanish_ci NOT NULL,
+  `fecha_unica_pago` varchar(30) COLLATE utf8_spanish_ci NOT NULL,
   `total_pagado` int(11) NOT NULL,
   `deuda_pendiente` int(11) NOT NULL,
   `contrato_activo` int(11) NOT NULL,
-  `fecha_activacion` varchar(50) COLLATE utf8_spanish_ci NOT NULL
+  `fecha_activacion` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `activo_y_cancelado` int(11) NOT NULL,
+  `tener_en_cuenta` varchar(10000) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `contratos_servicios_users`
 --
 
-INSERT INTO `contratos_servicios_users` (`id_solicitud`, `id_usuario`, `servicio`, `id_plan_escojido`, `facturacion_a_empresa`, `total_cobrar`, `cuota_plazo`, `total_pagado`, `deuda_pendiente`, `contrato_activo`, `fecha_activacion`) VALUES
-(2, 2, 'diseÃ±o_grafico_corporativo', '[][15][][][][][][][8][7][][][][][][]', 0, 0, 0, 0, 0, 1, ''),
-(3, 2, 'mantenimiento_soporte_tecnico', '1', 0, 0, 0, 0, 0, 1, ''),
-(4, 9, 'software_multiproposito', '2', 0, 0, 0, 0, 0, 1, '');
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `deudas_usuarios`
---
-
-CREATE TABLE `deudas_usuarios` (
-  `id_deuda` int(11) NOT NULL,
-  `id_compra` int(11) NOT NULL,
-  `id_usuario` int(11) NOT NULL,
-  `total_cuotas` int(11) NOT NULL,
-  `numero_cuotas_por_cancelar` int(11) NOT NULL,
-  `fecha_facturacion` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
-  `fecha_corte` varchar(20) COLLATE utf8_spanish_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+INSERT INTO `contratos_servicios_users` (`id_solicitud`, `id_usuario`, `servicio`, `id_plan_escojido`, `nombre_plan`, `facturacion_a_empresa`, `total_cobrar`, `cuota_plazo`, `valor_por_cuota`, `dia_defacturacion`, `fecha_finalizacion`, `fecha_unica_pago`, `total_pagado`, `deuda_pendiente`, `contrato_activo`, `fecha_activacion`, `activo_y_cancelado`, `tener_en_cuenta`) VALUES
+(1, 1, 'radio_online_streaming_hd', '2', 'Medium', 0, 499990, 0, 0, 0, '', '2018-05-03', 0, 0, 1, '03-05-2018', 0, 'ok\r\n                                            '),
+(2, 1, 'radio_online_streaming_hd', '2', 'Medium', 0, 499999, 4, 124999, 4, '2018-09-04', '', 0, 0, 1, '04-05-2018', 0, 'ok ok\r\n                                            '),
+(3, 1, 'diseÃ±o_grafico_corporativo', '[][][][][][][][][8][][][][][][][1]', 'no se que no se que', 0, 159999, 0, 0, 0, '', '2018-05-04', 0, 0, 1, '04-05-2018', 0, 'ok ok ok\r\n                                            '),
+(4, 1, 'software_multiproposito', '3', 'Premium', 0, 999999, 0, 0, 0, '', '2018-05-05', 0, 0, 1, '05-05-2018', 0, 'ok\r\n                                            ');
 
 -- --------------------------------------------------------
 
@@ -103,10 +110,10 @@ CREATE TABLE `diseno_grafico_corporativo` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `diseño_paginas_web`
+-- Estructura de tabla para la tabla `diseno_paginas_web`
 --
 
-CREATE TABLE `diseño_paginas_web` (
+CREATE TABLE `diseno_paginas_web` (
   `id_planes` int(11) NOT NULL,
   `planes` varchar(100) NOT NULL,
   `precio` float NOT NULL,
@@ -115,13 +122,82 @@ CREATE TABLE `diseño_paginas_web` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `diseño_paginas_web`
+-- Volcado de datos para la tabla `diseno_paginas_web`
 --
 
-INSERT INTO `diseño_paginas_web` (`id_planes`, `planes`, `precio`, `cotizacion`, `cuota_inicial`) VALUES
+INSERT INTO `diseno_paginas_web` (`id_planes`, `planes`, `precio`, `cotizacion`, `cuota_inicial`) VALUES
 (1, 'basico', 599999, 0, 599999),
 (2, 'medium', 1199990, 1, 599999),
 (3, 'premium', 1599990, 1, 799990);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `foto_estudio_y_realizacion_aud_visual`
+--
+
+CREATE TABLE `foto_estudio_y_realizacion_aud_visual` (
+  `id_planes` int(11) NOT NULL,
+  `planes` varchar(190) NOT NULL,
+  `precio` int(11) NOT NULL,
+  `cotizacion` int(11) NOT NULL,
+  `cuota_inicial` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `mantenimiento_soporte_tecnico`
+--
+
+CREATE TABLE `mantenimiento_soporte_tecnico` (
+  `id_planes` int(11) NOT NULL,
+  `planes` varchar(100) NOT NULL,
+  `precio` float NOT NULL,
+  `cotizacion` int(11) NOT NULL,
+  `cuota_inicial` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `mantenimiento_y_soporte`
+--
+
+CREATE TABLE `mantenimiento_y_soporte` (
+  `id_planes` int(11) NOT NULL,
+  `planes` varchar(190) NOT NULL,
+  `precio` int(11) NOT NULL,
+  `cotizacion` int(11) NOT NULL,
+  `cuota_inicial` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `notas_o_tareas_admin`
+--
+
+CREATE TABLE `notas_o_tareas_admin` (
+  `id` int(11) NOT NULL,
+  `id_admin` int(11) NOT NULL,
+  `fecha` varchar(30) NOT NULL,
+  `nota_o_tarea` varchar(5000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `producion_comerciales_r_t_i`
+--
+
+CREATE TABLE `producion_comerciales_r_t_i` (
+  `id_planes` int(11) NOT NULL,
+  `planes` varchar(190) NOT NULL,
+  `precio` int(11) NOT NULL,
+  `cotizacion` int(11) NOT NULL,
+  `cuota_inicial` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -138,14 +214,6 @@ CREATE TABLE `puntos_descuentos` (
   `motivo` varchar(50) NOT NULL,
   `fecha_fin_descuento` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `puntos_descuentos`
---
-
-INSERT INTO `puntos_descuentos` (`id`, `id_usuario`, `puntos`, `descuento`, `aplica`, `motivo`, `fecha_fin_descuento`) VALUES
-(1, 2, 5, 10, 'Diseño de paginas web', 'Compra de pc de mesa', '12 de mayo de 2018'),
-(2, 2, 3, 4, 'todo', 'completaste 8 puntos', '12 de mayo de 2018');
 
 -- --------------------------------------------------------
 
@@ -196,6 +264,25 @@ INSERT INTO `software_multiproposito` (`id_planes`, `planes`, `precio`, `cotizac
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `user_recibos_de_pago_servicios`
+--
+
+CREATE TABLE `user_recibos_de_pago_servicios` (
+  `id` int(11) NOT NULL,
+  `id_contrato_activo` int(11) NOT NULL,
+  `id_user` int(11) NOT NULL,
+  `numero_factura` int(11) NOT NULL,
+  `tipo_factura` varchar(50) NOT NULL,
+  `valor` int(11) NOT NULL,
+  `fecha_limite_de_pago` varchar(90) NOT NULL,
+  `dias_de_atraso_mora` int(11) NOT NULL,
+  `valor_a_pagar_por_mora` int(11) NOT NULL,
+  `factura_pagada` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `usuarios`
 --
 
@@ -214,22 +301,14 @@ CREATE TABLE `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci ROW_FORMAT=COMPACT;
 
 --
--- Volcado de datos para la tabla `usuarios`
---
-
-INSERT INTO `usuarios` (`id`, `cedula`, `nombres`, `apellidos`, `departamento_ciudad`, `empresa`, `nit_empresa`, `email`, `pass`, `celular`, `dealta`) VALUES
-(1, '1067962991', 'Sair', 'sanchez', '', '', '', 'sair.sanchez29@gmail.com', 'sair.sanchez29@gmail.comarray981129sa', '', 1),
-(2, '32253230', 'SAIR ', 'SANCHEZ VALDERRAMA', 'MONTERÃ­A - CORDOBA', '', '', 'admin@admin', '123456', '3218070767', 1),
-(4, '', '', '', '', '', '', 'arraycolombia@gmail.com', 'arraycolombia@gmail.comarray981129sa', '', 0),
-(5, '', 'Carlos mario', 'Villera arroyo', '', '', '', 'carlosmariovilleraarroyo@gmail.com', 'carlosmariovilleraarroyo@gmail.comarray981129sa', '', 1),
-(6, '', 'carlos', 'villera arroyo', '', '', '', 'holi@gmail.cokm', '123', '', 0),
-(7, '', 'claudia', 'beltran', '', '', '', 'claudybel805@gmail.com', 'claudybel805@gmail.comarray981129sa', '', 0),
-(8, '', 'angelica', 'ramos ramirez', '', '', '', 'angelicaramox@gmail.com', 'angelicaramox@gmail.comarray981129sa', '', 0),
-(9, '', 'JUAN', 'RODRIGUEZ MENDEZ', 'BogotÃ¡ DC', '', '', 'juanmendez@gmail.com', '12345', '3218070767', 1);
-
---
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `acceso_admin_controller`
+--
+ALTER TABLE `acceso_admin_controller`
+  ADD PRIMARY KEY (`id_acceso`);
 
 --
 -- Indices de la tabla `admin_user`
@@ -244,21 +323,45 @@ ALTER TABLE `contratos_servicios_users`
   ADD PRIMARY KEY (`id_solicitud`);
 
 --
--- Indices de la tabla `deudas_usuarios`
---
-ALTER TABLE `deudas_usuarios`
-  ADD PRIMARY KEY (`id_deuda`);
-
---
 -- Indices de la tabla `diseno_grafico_corporativo`
 --
 ALTER TABLE `diseno_grafico_corporativo`
   ADD PRIMARY KEY (`id_planes`);
 
 --
--- Indices de la tabla `diseño_paginas_web`
+-- Indices de la tabla `diseno_paginas_web`
 --
-ALTER TABLE `diseño_paginas_web`
+ALTER TABLE `diseno_paginas_web`
+  ADD PRIMARY KEY (`id_planes`);
+
+--
+-- Indices de la tabla `foto_estudio_y_realizacion_aud_visual`
+--
+ALTER TABLE `foto_estudio_y_realizacion_aud_visual`
+  ADD PRIMARY KEY (`id_planes`);
+
+--
+-- Indices de la tabla `mantenimiento_soporte_tecnico`
+--
+ALTER TABLE `mantenimiento_soporte_tecnico`
+  ADD PRIMARY KEY (`id_planes`);
+
+--
+-- Indices de la tabla `mantenimiento_y_soporte`
+--
+ALTER TABLE `mantenimiento_y_soporte`
+  ADD PRIMARY KEY (`id_planes`);
+
+--
+-- Indices de la tabla `notas_o_tareas_admin`
+--
+ALTER TABLE `notas_o_tareas_admin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `producion_comerciales_r_t_i`
+--
+ALTER TABLE `producion_comerciales_r_t_i`
   ADD PRIMARY KEY (`id_planes`);
 
 --
@@ -280,6 +383,12 @@ ALTER TABLE `software_multiproposito`
   ADD PRIMARY KEY (`id_planes`);
 
 --
+-- Indices de la tabla `user_recibos_de_pago_servicios`
+--
+ALTER TABLE `user_recibos_de_pago_servicios`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
@@ -290,10 +399,16 @@ ALTER TABLE `usuarios`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `acceso_admin_controller`
+--
+ALTER TABLE `acceso_admin_controller`
+  MODIFY `id_acceso` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `admin_user`
 --
 ALTER TABLE `admin_user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `contratos_servicios_users`
@@ -302,28 +417,52 @@ ALTER TABLE `contratos_servicios_users`
   MODIFY `id_solicitud` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT de la tabla `deudas_usuarios`
---
-ALTER TABLE `deudas_usuarios`
-  MODIFY `id_deuda` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT de la tabla `diseno_grafico_corporativo`
 --
 ALTER TABLE `diseno_grafico_corporativo`
   MODIFY `id_planes` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `diseño_paginas_web`
+-- AUTO_INCREMENT de la tabla `diseno_paginas_web`
 --
-ALTER TABLE `diseño_paginas_web`
+ALTER TABLE `diseno_paginas_web`
   MODIFY `id_planes` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT de la tabla `foto_estudio_y_realizacion_aud_visual`
+--
+ALTER TABLE `foto_estudio_y_realizacion_aud_visual`
+  MODIFY `id_planes` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `mantenimiento_soporte_tecnico`
+--
+ALTER TABLE `mantenimiento_soporte_tecnico`
+  MODIFY `id_planes` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `mantenimiento_y_soporte`
+--
+ALTER TABLE `mantenimiento_y_soporte`
+  MODIFY `id_planes` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `notas_o_tareas_admin`
+--
+ALTER TABLE `notas_o_tareas_admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `producion_comerciales_r_t_i`
+--
+ALTER TABLE `producion_comerciales_r_t_i`
+  MODIFY `id_planes` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `puntos_descuentos`
 --
 ALTER TABLE `puntos_descuentos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `radio_online_streaming_hd`
@@ -338,10 +477,16 @@ ALTER TABLE `software_multiproposito`
   MODIFY `id_planes` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT de la tabla `user_recibos_de_pago_servicios`
+--
+ALTER TABLE `user_recibos_de_pago_servicios`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

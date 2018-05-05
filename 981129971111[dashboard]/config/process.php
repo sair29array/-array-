@@ -126,7 +126,7 @@
 					$Celular_igual = $Celular_igual + 1 ;
 				}
 
-				if ($user["nit_empresa"] == $nit && $user["id"] != $id) {
+				if ($user["nit_empresa"] != ""  && $user["nit_empresa"] == $nit && $user["id"] != $id) {
 					$nit_igual = $nit_igual + 1 ;
 				}
 			}

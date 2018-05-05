@@ -120,7 +120,7 @@ switch (@$_GET["servicios"])
     <meta name="keywords" content="<?php echo $keywords;  ?>">
     <meta name="author" content="Sair Sánchez - Array - array.com.co">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="theme-color" content="#37474F">
+    <meta name="theme-color" content="#1e1f20">
     <!-- titulo de la pagina-->
     <title><?php echo $title; ?></title>
     <!-- icono de la pagina -->

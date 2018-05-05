@@ -10,27 +10,20 @@
                             <span class="title-rds">Conectate con nuestras redes sociales!</span>
                             </>
                     </div>
+                
                     <!--Grid column-->
                     <div class="col-md-6 col-lg-4 text-center text-md-right mt-3">
                         <!--Facebook-->
-                        <a class="icons-sm fb-ic ml-0">
-                            <i class="fab fa-2x fa-facebook  mr-lg-4"> </i>
+                        <a href="https://www.facebook.com/array.col.9" target="_blank">
+                            <i class="fab fa-3x fa-facebook  mr-lg-4"></i>
                         </a>
-                        <!--Twitter-->
-                        <a class="icons-sm tw-ic">
-                            <i class="fab fa-2x fa-twitter  mr-lg-4"> </i>
-                        </a>
-                        <!--Google +-->
-                        <a class="icons-sm gplus-ic">
-                            <i class="fab fa-2x fa-google-plus  mr-lg-4"> </i>
-                        </a>
-                        <!--Linkedin-->
-                        <a class="icons-sm li-ic">
-                            <i class="fab fa-2x fa-linkedin  mr-lg-4"> </i>
+                        <!--youtube-->
+                        <a href="https://www.youtube.com/channel/UCt9sDqpfjLnEO2QYsGCD8Hg" target="_blank">
+                            <i class="fab fa-3x fa-youtube  mr-lg-4"></i>
                         </a>
                         <!--Instagram-->
-                        <a class="icons-sm ins-ic">
-                            <i class="fab fa-2x fa-instagram  mr-lg-4"> </i>
+                        <a href="https://www.instagram.com/array_etic/" target="_blank">
+                            <i class="fab fa-3x fa-instagram  mr-lg-4"></i>
                         </a>
                     </div>
                     <!--Grid column-->

@@ -19,7 +19,7 @@
                                     ?> <strong>BIENVENIDO A ARRAY</strong> <?php 
                                 }else{
                                     if ($user_["dealta"] == 0) {
-                                       ?> <strong>Ahora eres parte de array</strong><p>Activa tu cuenta con el link que hemos enviado a tu correo.</p> <?php 
+                                       ?> <strong>BIENVENIDO</strong><hr class="white"><p class="h4">Activa tu cuenta desde tu correo.</p> <?php 
                                     }else{
                                         ?> <strong>Hola, Bienvenido</strong> <?php
                                     }

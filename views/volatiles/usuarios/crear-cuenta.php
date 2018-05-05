@@ -111,7 +111,7 @@ if(@$pay_load!== null)
                         <div class="md-form">
                             <div class="mt-auto mb-3 text-center">
                         <a href="<?php echo $auth_url; ?>" role="button" class=" btn boton-google btn-md  waves-effect ">
-                        <h5 class="h5-responsive m-auto"><i class="fab fa-google"></i> | Registrate  con Google</h5></a>
+                        <span class="title-btn-social"><i class="fab fa-google title-btn-social"></i> | Registrate  con Google</h5></a>
                         </div>
                         </div>
                         <div class="text-center">

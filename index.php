@@ -15,16 +15,10 @@ if (isset($_SESSION['user_log']))
         $id_user = $user_["id"];
         
        $name_user = $user_['nombres'];
-       $apellidos_user = $user_['apellidos'];
-       
+       $apellidos_user = $user_['apellidos'];   
    }
-
 }
- 
 //////////////Mensaje de bienvenida - cuando el user inicia sesión //////////////
-
-//////////////////////////////////////
-/////////////////////////////////////
 /////////////////////////////////////
 // TITULO  Y DESCRIPCIÓN POR PÁGINA////
 $title ="Array | Expertos en TIC";
@@ -108,19 +102,33 @@ switch (@$_GET["servicios"])
 
  ?>
 <!DOCTYPE html>
-<html lang="es" class="full-height">
+<html lang="es" class="full-height" prefix="og: http://ogp.me/ns#">
 
 <head>
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="691814b4-a7c8-44d9-8986-8c39ff2ebf52";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
-     <meta name="description" content="<?php echo $description; ?>">
+    <meta name="description" content="<?php echo $description; ?>">
     <meta name="keywords" content="<?php echo $keywords;  ?>">
     <meta name="author" content="Sair Sánchez - Array - array.com.co">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="theme-color" content="#1e1f20">
+    <meta name="theme-color" content="#ff3a5f">
+    <!-- tags Google -->
+    <meta itemprop="description" content="Somos una empresa colombiana cuyo objetivo principal es 
+    trabajar con TICs (Tecnologias de la Información y las Comunicaciones) desarrollando mejores 
+    herramientas que facilitan el trabajo diario de cualquier empresa."/>
+    <!-- og tags principales -->
+    <?php 
+    if (!isset($_GET[':']) ) {
+        include("views/volatiles/og-tags/principal.php");
+    } else if ($_GET[":"]=="servicios-array"){
+        include("views/volatiles/og-tags/servicios.php");
+    }else if ($_GET[":"]=="productos-array"){
+        include("views/volatiles/og-tags/productos.php");
+    }else if ($_GET[":"]=="quienes-somos"){
+        include("views/volatiles/og-tags/quienes-somos.php");
+    }
+    ?>
     <!-- titulo de la pagina-->
     <title><?php echo $title; ?></title>
     <!-- icono de la pagina -->
@@ -143,8 +151,6 @@ switch (@$_GET["servicios"])
       <!-- estilos galeria -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
     <link rel="stylesheet" href="css/galeria.css">
-
-   
 </head>
 
 <body class="barra-x-hidden">
@@ -163,18 +169,14 @@ switch (@$_GET["servicios"])
         	// vistas fijas - navbar
         	include("views/fijas/navbar.php");
 
-
             if (!isset($_GET[':'])  && !isset($_GET["servicios"])) 
             {
         	 /// vistas volatil - slider
             include("views/volatiles/principal/slider.php");
             }
          ?>
-        
-   
     <main class="barra-x-hidden barra-y-hidden">
        <?php 
-
         if (!isset($_GET[':']) && !isset($_GET["servicios"])) 
         {
 
@@ -203,12 +205,8 @@ switch (@$_GET["servicios"])
             ?><script>location.href="./?:=MiCuenta"</script> <?php 
         }
 
-
-
-
         // para las vistas de los servicios
         if (!isset($_GET["servicios"])) {
-    # code...
         }else if ($_GET['servicios']=="Diseño_De_Paginas_web") {
         include("views/volatiles/servicios/DisenoPaginasWeb/dipg.php");
         }else if ($_GET['servicios']=="radio_online_streaming_hd") {
@@ -303,4 +301,4 @@ if (isset($_GET["activate"]))
     $email = $_GET["981129()//array_user-act"];
     $sair->ActivarDardeAltaAuser($email);
 }
- ?>
+?>

@@ -9,7 +9,7 @@
                 <!--Second column-->
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-r">
                     <h6 class="spacing font-bold">
-                        <strong>Compañia</strong>
+                        <strong>Compañía</strong>
                     </h6>
                     <hr class="blue accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>

@@ -56,7 +56,7 @@
 
                
                     Motivado por Sair Sánchez (Director general y fundador de Array) comienza a trabajar en la construcción de array,
-                    siempre en la búsqueda del buen uso para las Tic´s.
+                    siempre en la búsqueda del buen uso de las Tics.
 
             </p>
       </div>

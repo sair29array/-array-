@@ -50,8 +50,8 @@
           </div>
         </div>
             <p class="text-justify">
-            	necesidades personales y de otras personas o empresas. 
-                 En el año 2016 decide empezar a trabajar en la idea de usar las Tecnologías de la Información y la Comunicación (TIC) para mejorar las herramientas con las que las empresas y organizaciones educativas realizan sus tareas diarias. Hoy se le conoce a dicha idea como Array | expertos en TIC.
+            	necesidades propias y de otras personas o empresas. 
+                 En el año 2016 decide empezar a trabajar en la idea de usar las Tecnologías de la Información y la Comunicación (TIC) para mejorar las herramientas con las que muchas empresas y organizaciones educativas realizan sus tareas diarias. Hoy se le conoce a dicha idea como Array | expertos en TIC.
             </p>
       </div>
     </div>

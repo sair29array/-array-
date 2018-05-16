@@ -179,22 +179,22 @@
 }
 else
 	{
-		$escarapelas = $_POST["escarapelas"];
-		$botones = $_POST["botones"];
-		$pendones = $_POST["pendones"];
-		$tarjetas_visitas = $_POST["tarjetas_visitas"];
-		$sellos =  $_POST["sellos"];
-		$facturas = $_POST["facturas"];
-		$carpetas = $_POST["carpetas"];
-		$formEmpresas = $_POST["formularios"];
-		$sobres = $_POST["sobres"];
-		$doc = $_POST["documentos"];
-		$carteles = $_POST["carteles"];
-		$flyer = $_POST["flyer"];
-		$revistas = $_POST["revistas"];
-		$folletos = $_POST["folletos"];
-		$tarjetas_presentacion = $_POST["tarjetas_presentacion"];
-		$diseño_logotipo = $_POST["diseño_logotipo"];
+		$escarapelas = @$_POST["escarapelas"];
+		$botones = @$_POST["botones"];
+		$pendones = @$_POST["pendones"];
+		$tarjetas_visitas = @$_POST["tarjetas_visitas"];
+		$sellos =  @$_POST["sellos"];
+		$facturas = @$_POST["facturas"];
+		$carpetas = @$_POST["carpetas"];
+		$formEmpresas = @$_POST["formularios"];
+		$sobres = @$_POST["sobres"];
+		$doc = @$_POST["documentos"];
+		$carteles = @$_POST["carteles"];
+		$flyer = @$_POST["flyer"];
+		$revistas = @$_POST["revistas"];
+		$folletos = @$_POST["folletos"];
+		$tarjetas_presentacion = @$_POST["tarjetas_presentacion"];
+		$diseño_logotipo = @$_POST["diseño_logotipo"];
 
 		$solicitud = "[".$escarapelas ."]"."[".$botones."]"."[".$pendones."]"."[".$tarjetas_visitas ."]"."[".$sellos ."]"."[".$facturas ."]"."[".$carpetas ."]"."[".$formEmpresas."]"."[".$sobres."]"."[".$doc."]"."[".$carteles ."]"."[".$flyer ."]"."[".$revistas."]"."[".$folletos."]"."[".$tarjetas_presentacion."]"."[".$diseño_logotipo."]";
 

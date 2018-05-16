@@ -4,9 +4,9 @@
                 <div class="row">
                     <div class="col-12 wow zoomIn" data-wow-delay="0.4s">
                         <h1 class="divider-new text-center text-secondary mb-0 title-somos">
-                            METODOLOGÍA DE TRABAJO
+                           ¿Cómo lo hacemos?
                         </h1>
-                        <h6 class="text-center ">¿Cómo hacemos para que nuestros productos y servicios satisfagan a nuestros clientes?</h6>
+                       
                     </div>
                 </div>
                 <div class="row justify-content-around mt-5 wow fadeInUp" data-wow-delay="0.4s">
@@ -21,7 +21,7 @@
                                     <strong>IDEA</strong>
                                 </h4>
                                 <!--Text-->
-                                <p class="mt-2">¿Quieres lanzar tu idea de negocio y convertila en un negocio rentable?</p>
+                                <p class="mt-2">Todo proyecto empieza con una idea, esta idea surge porque existe un problema que solucionar.</p>
                             </div>
                         </div>
                     </div>
@@ -33,10 +33,10 @@
                             <div class="card-body">
                                 <!--Title-->
                                 <h4 class="card-title m-0">
-                                    <strong>CONCEPTO</strong>
+                                    <strong>ANÁLISIS</strong>
                                 </h4>
                                 <!--Text-->
-                                <p class="mt-2">¿Quieres lanzar tu idea de negocio y convertila en un negocio rentable?</p>
+                                <p class="mt-2">Ponemos en marcha el análisis del problema, lanzamos hipótesis e investigamos posibles respuestas.</p>
                             </div>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                                     <strong>DISEÑO</strong>
                                 </h4>
                                 <!--Text-->
-                                <p class="mt-2">¿Quieres lanzar tu idea de negocio y convertila en un negocio rentable?</p>
+                                <p class="mt-2">Comenzamos a diseñar estrategias para solucionar la problemática existente, teniendo en cuenta la opinión de los involucrados.</p>
                             </div>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                                     <strong>DESARROLLO</strong>
                                 </h4>
                                 <!--Text-->
-                                <p class="mt-2">¿Quieres lanzar tu idea de negocio y convertila en un negocio rentable?</p>
+                                <p class="mt-2">Implementamos la estrategia a través de un plan de acción claro, que permita el completo desarrollo de las herramientas o recursos.</p>
                             </div>
                         </div>
                     </div>

@@ -8,40 +8,33 @@
                     </div>
                 </div>
                 
-                <div class="row justify-content-around">
-                    <div class="col-12 col-md-5 col-lg-5 text-center wow zoomIn" data-wow-delay="0.3s">
+                <div class=" col-12 row justify-content-around">
+                    <div class="col-12 col-md-4 col-lg-4 text-center wow zoomIn" data-wow-delay="0.3s">
                         <img class="img img-fluid somos_about_img" src="img//icons/icon-world.png" alt="planeta">
-                        <p class="mb-5 mt-3 text-justify">
+                        <p class="mb-5 mt-3 text-center">
                             Somos una empresa colombiana cuyo objetivo principal es trabajar con TICs (Tecnologias de la Información y las Comunicaciones)
-                            desarrollando mejores herramientas que facilitan el trabajo diario de cualquier empresa.
+                            desarrollando mejores herramientas que facilitan el trabajo diario de muchas empresas.
                         </p>
                     </div>
-                    <div class="col-12 col-md-5 col-lg-5 text-center wow zoomIn" data-wow-delay="0.3s">
-                        <img class="img img-fluid somos_about_img" src="img//icons/cohete.png" alt="cohete">
-                        <p class="mb-4 mt-3 text-justify">
-                           En array siempre estamos buscando actualizar nuestras herramientas para brindarte un producto que este a la vanguardia del cambiante y exigente mundo de la tecnologia.
-                           por esto mismo nuestro equipo se esta actualizando.
-                        </p>
-                    </div>
-                    <div class="col-12 col-md-5 col-lg-5 text-center wow zoomIn" data-wow-delay="0.3s">
+                     <div class="col-12 col-md-4 col-lg-4 text-center wow zoomIn" data-wow-delay="0.3s">
                         <img class="img img-fluid somos_about_img" src="img//icons/icon-calidad.png" alt="calidad">
-                        <p class="mb-5 mt-3 text-justify">
-                            Al preferirnos usted notará que nuestros productos cumplen con los estándares 
-                            de cálidad. Nuestra experiencia con las nuevas tecnologias de
-                            la informacion y la comunicacion nos permiten constantemente
-                            actualizar nuestra gama de sistemas a las cambiantes
+                        <p class="mb-5 mt-3 text-center">
+                            Al preferirnos, notarás que nuestros servicios y productos cumplen con los estándares 
+                            de cálidad. Nuestra experiencia con las TICs nos permiten constantemente
+                            actualizar nuestros sistemas a las cambiantes
                             necesidades del mundo actual. 
                         </p>
                     </div>
-                    <div class="col-12 col-md-5 col-lg-5 text-center wow zoomIn" data-wow-delay="0.3s">
-                        <img class="img img-fluid somos_about_img mb-2" src="img/icons/icon-desarrollo.png" alt="diseño-web">
-                        <p class="mb-5 mt-3 text-justify">
-                            En array diseñamos y desarrollamos sistemas informáticos en el nuevo paradigma 
-                            de la WEB 2.0. Brindamos servicios como: Diseño de paginas web, soporte 
-                            tecnico de computadoras y redes locales, Creamos comerciales para radio y tv. 
-                            . 
+                    
+                    <div class="col-12 col-md-4 col-lg-4 text-center wow zoomIn" data-wow-delay="0.3s">
+                        <img class="img img-fluid somos_about_img" src="img//icons/cohete.png" alt="cohete">
+                        <p class="mb-4 mt-3 text-center">
+                           En array siempre estamos buscando actualizar nuestras herramientas para brindarte un mejor servicio con un resultado que esté a la vanguardia del cambiante y exigente mundo de la tecnología.
+                           
                         </p>
                     </div>
+                   
+                    
                 </div>    
                     <div class="col-12 text-center">
                     <a href="./?:=quienes-somos"  role="button"  class="btn boton1 btn-lg mb-5 wow zoomIn" data-wow-delay="0.1s">Conocer más

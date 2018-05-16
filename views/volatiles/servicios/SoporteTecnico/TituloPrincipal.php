@@ -20,8 +20,17 @@
                 		if (!isset($_GET["reg_empresa"]) ) {
                 		?> 
                 	
-                	<?php 
-                    if ($user_["dealta"]==1) {
+                	   <?php 
+
+                    if (!isset($_SESSION["user_log"])) {
+                         ?> <a href="./?servicios=MantSoporteTécnico&datos">
+                        <button type="button" name="solicitar_servicio" class="btn boton-c btn-md mb-5">
+                        Solicitar
+                            <i class="fa fa-caret-right"></i>
+                    </button>
+                    </a> <?php 
+                    }
+                    else if ($user_["dealta"]==1) {
                         ?> <a href="./?servicios=MantSoporteTécnico&datos">
                         <button type="button" name="solicitar_servicio" class="btn boton-c btn-md mb-5">
                         Solicitar

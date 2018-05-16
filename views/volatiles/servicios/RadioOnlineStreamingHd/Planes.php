@@ -22,14 +22,19 @@ foreach ($PlanPremium as $pp) {
                         <div class="col-12 col-sm-6 col-md-4 margen-superior mt-5 mb-2 wow zoomIn" data-wow-delay="0.4s">
                             <div align="center">
                                 <div class="card" >
-                                    
-
-                                        <?php if ($user_["dealta"]==1) {
-                                            ?><a href="./?servicios=radio_online_streaming_hd&solicitud=plan-básico"> <?php 
+                                    <?php 
+                                        if ( !isset($_SESSION["user_log"])  ) {
+                                            ?> <a href="./?servicios=radio_online_streaming_hd&solicitud=plan-básico"><?php 
                                         }else{
-                                            ?><a href="./?:=serviceResp8/8800/22/s-act_n8ll"> <?php  
-                                        } ?>
-                                        
+                                            if ($user_["dealta"]==1) {
+                                                ?> <a href="./?servicios=radio_online_streaming_hd&solicitud=plan-básico"><?php 
+                                            }else{ 
+                                            ?> <a href="./?:=serviceResp8/8800/22/s-act_n8ll"> <?php 
+                                            }
+                                        }
+                                     ?>
+
+                                       
                                         <div class="card-header stylish-color white-text">
                                         <span class="h2-responsive mb-0" >PLAN BÁSICO</span>
                                         <hr>
@@ -84,13 +89,18 @@ foreach ($PlanPremium as $pp) {
                                         </div>
                                     </div>
                                     <div class="card-footer text-center">
-                                        <?php 
-                                            if ($user_["dealta"]==1) {
+                                       
+                                          <?php 
+                                            if (!isset($_SESSION["user_log"])) {
+                                                ?>
+                                                    <a href="./?servicios=radio_online_streaming_hd&solicitud=plan-básico"><button class="btn boton-c btn-md">Solicitar</button></a> 
+                                                 <?php 
+                                            }else if ($user_["dealta"]==1) {
                                                 ?><a href="./?servicios=radio_online_streaming_hd&solicitud=plan-básico"><button class="btn boton-c btn-md">Solicitar</button></a> <?php 
                                             }else{
                                                 ?> <a href="./?:=serviceResp8/8800/22/s-act_n8ll"><button class="btn boton-c btn-md">Solicitar</button></a><?php 
                                             }
-                                         ?>
+                                        ?>
                                     </div>
                                 </div>
                             </div>
@@ -98,13 +108,20 @@ foreach ($PlanPremium as $pp) {
                         <div class="col-12 col-sm-6 col-md-4 margen-superior mt-5 mb-2 wow zoomIn" data-wow-delay="0.4s">
                             <div align="center">
                                 <div class="card">
+                                    <?php 
+                                        if ( !isset($_SESSION["user_log"])  ) {
+                                            ?> <a href="./?servicios=radio_online_streaming_hd&solicitud=plan-medium"><?php 
+                                        }else{
+                                            if ($user_["dealta"]==1) {
+                                                ?> <a href="./?servicios=radio_online_streaming_hd&solicitud=plan-medium"><?php 
+                                            }else{ 
+                                            ?> <a href="./?:=serviceResp8/8800/22/s-act_n8ll"> <?php 
+                                            }
+                                        }
+                                     ?>
+
                                    
 
-                                     <?php if ($user_["dealta"]==1) {
-                                            ?><a href="./?servicios=radio_online_streaming_hd&solicitud=plan-medium"> <?php 
-                                        }else{
-                                            ?><a href="./?:=serviceResp8/8800/22/s-act_n8ll"> <?php  
-                                        } ?>
                                         <div class="card-header primary-color white-text">
                                           <span class="h2-responsive mb-0">PLAN MEDIUM</span>
                                         <hr>
@@ -159,14 +176,18 @@ foreach ($PlanPremium as $pp) {
                                     </div>
                                      <div class="card-footer text-center">
                                                 
-
-                                            <?php 
-                                            if ($user_["dealta"]==1) {
+                                        <?php 
+                                            if (!isset($_SESSION["user_log"])) {
+                                                ?>
+                                                    <a href="./?servicios=radio_online_streaming_hd&solicitud=plan-medium"><button class="btn boton-c btn-md">Solicitar</button></a> 
+                                                 <?php 
+                                            }else if ($user_["dealta"]==1) {
                                                 ?><a href="./?servicios=radio_online_streaming_hd&solicitud=plan-medium"><button class="btn boton-c btn-md">Solicitar</button></a> <?php 
                                             }else{
                                                 ?> <a href="./?:=serviceResp8/8800/22/s-act_n8ll"><button class="btn boton-c btn-md">Solicitar</button></a><?php 
                                             }
-                                         ?>
+                                        ?>
+                                           
                                      </div>
                                 </div>
                             </div>
@@ -174,13 +195,19 @@ foreach ($PlanPremium as $pp) {
                         <div class="col-12 col-sm-6 col-md-4 margen-superior mt-5 mb-2 wow zoomIn" data-wow-delay="0.4s">
                             <div align="center">
                                 <div class="card">
-                                  
-
-                                     <?php if ($user_["dealta"]==1) {
-                                            ?><a href="./?servicios=radio_online_streaming_hd&solicitud=plan-premium"> <?php 
+                                   <?php 
+                                        if ( !isset($_SESSION["user_log"])  ) {
+                                            ?> <a href="./?servicios=radio_online_streaming_hd&solicitud=plan-premium"><?php 
                                         }else{
-                                            ?><a href="./?:=serviceResp8/8800/22/s-act_n8ll"> <?php  
-                                        } ?>
+                                            if ($user_["dealta"]==1) {
+                                                ?> <a href="./?servicios=radio_online_streaming_hd&solicitud=plan-premium"><?php 
+                                            }else{ 
+                                            ?> <a href="./?:=serviceResp8/8800/22/s-act_n8ll"> <?php 
+                                            }
+                                        }
+                                     ?>
+
+                                    
                                         <div class="card-header stylish-color white-text">
                                          <span class="h2-responsive mb-0">PLAN PREMIUM</span>
                                         <hr>
@@ -236,13 +263,19 @@ foreach ($PlanPremium as $pp) {
                                     </div>
                                     <div class="card-footer text-center" >
                                        
-                                        <?php 
-                                            if ($user_["dealta"]==1) {
+                                       <?php 
+                                            if (!isset($_SESSION["user_log"])) {
+                                                ?>
+                                                    <a href="./?servicios=radio_online_streaming_hd&solicitud=plan-premium"><button class="btn boton-c btn-md">Solicitar</button></a> 
+                                                 <?php 
+                                            }else if ($user_["dealta"]==1) {
                                                 ?><a href="./?servicios=radio_online_streaming_hd&solicitud=plan-premium"><button class="btn boton-c btn-md">Solicitar</button></a> <?php 
                                             }else{
                                                 ?> <a href="./?:=serviceResp8/8800/22/s-act_n8ll"><button class="btn boton-c btn-md">Solicitar</button></a><?php 
                                             }
-                                         ?>
+                                        ?>
+
+                                       
                                     </div>
                                 </div>
                             </div>

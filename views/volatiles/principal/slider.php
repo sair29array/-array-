@@ -16,10 +16,10 @@
                         <div class="wow wow fadeInDown" data-wow-delay="0.2s">
                             <h1 class="h1-responsive title-view-mobile d-block d-sm-block d-md-none ">
                                 <?php if (@!$_SESSION["user_log"]) {
-                                    ?> <strong>BIENVENIDO A ARRAY</strong> <?php 
+                                    ?> <strong>Bienvenid@</strong> <?php 
                                 }else{
                                     if ($user_["dealta"] == 0) {
-                                       ?> <strong>BIENVENIDO</strong><hr class="white"><p class="h4">Activa tu cuenta desde tu correo.</p> <?php 
+                                       ?> <strong>BIienvenid</strong><hr class="white"><p class="h4">Activa tu cuenta desde tu correo.</p> <?php 
                                     }else{
                                         ?> <strong>Hola, Bienvenido</strong> <?php
                                     }
@@ -28,12 +28,12 @@
                             </h1>
                             <h1 class="h1-responsive title-view-desktop d-none d-md-block mt-5">
                                  <?php if (@!$_SESSION["user_log"]) {
-                                    ?> <strong>BIENVENIDO A ARRAY</strong> <?php 
+                                    ?> <strong>Bienvenid@</strong> <?php 
                                 }else{
                                     if ($user_["dealta"] == 0) {
                                        ?> <strong>Ahora eres parte de array</strong> <?php 
                                     }else{
-                                        ?> <strong>Hola, Bienvenido</strong> <?php
+                                        ?> <strong>Hola, Bienvenid@</strong> <?php
                                     }
                                 } ?>
                             </h1>
@@ -54,8 +54,8 @@
                                 <?php if (!isset($_SESSION['user_log'])) {
                                 ?>
                                 <div class="mt-auto mb-0 slider">
-                                    <h3 class="t-s">EN
-                                        <strong>ARRAY</strong> SOMOS EXPERTOS EN TIC</h3>
+                                    <h3 class="t-s">En
+                                        <strong>Array</strong> somos expertos en TIC</h3>
                                     <h3>Tecnologías de la Información y las Comunicaciones</h3>
                                    
                                 </div>
@@ -78,7 +78,7 @@
                                         <strong>Correo </strong> electónico</h3>
                                     <h3><?php echo $user_["email"] ; ?></h3>
                                     
-                                    <h3>Te hemos enviado un link para activar tu cuenta</h3>
+                                    <h3>Te hemos enviado un email para activar tu cuenta</h3>
                                 </div>
                                             <?php 
                                     }

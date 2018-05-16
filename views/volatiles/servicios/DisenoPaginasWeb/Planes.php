@@ -23,10 +23,14 @@ foreach ($PlanPremium as $pp) {
                             <div align="center">
                                 <div class="card" >
                                     <?php 
-                                        if ($user_["dealta"]==1) {
+                                        if ( !isset($_SESSION["user_log"])  ) {
                                             ?> <a href="./?servicios=Diseño_De_Paginas_web&solicitud=plan-básico"><?php 
                                         }else{
+                                            if ($user_["dealta"]==1) {
+                                                ?> <a href="./?servicios=Diseño_De_Paginas_web&solicitud=plan-básico"><?php 
+                                            }else{ 
                                             ?> <a href="./?:=serviceResp8/8800/22/s-act_n8ll"> <?php 
+                                            }
                                         }
                                      ?>
                                         
@@ -82,8 +86,15 @@ foreach ($PlanPremium as $pp) {
                                         </div>
                                     </div>
                                     <div class="card-footer text-center">
-                                                <?php 
-                                                    if ($user_["dealta"]==1) 
+                                                
+
+                                                  <?php 
+
+                                                if (!isset($_SESSION["user_log"])) {
+                                                    ?>
+                                                     <a href="./?servicios=Diseño_De_Paginas_web&solicitud=plan-básico"><button class="btn boton-c btn-md">Solicitar</button></a>
+                                                    <?php 
+                                                }else if ($user_["dealta"]==1) 
                                                     {
                                                         ?>
                                                         <a href="./?servicios=Diseño_De_Paginas_web&solicitud=plan-básico"><button class="btn boton-c btn-md">Solicitar</button></a>
@@ -102,14 +113,18 @@ foreach ($PlanPremium as $pp) {
                             <div align="center">
                                 <div class="card">
                                     
-
-                                    <?php 
-                                        if ($user_["dealta"]==1) {
+                                     <?php 
+                                        if ( !isset($_SESSION["user_log"])  ) {
                                             ?> <a href="./?servicios=Diseño_De_Paginas_web&solicitud=plan-medium"><?php 
                                         }else{
+                                            if ($user_["dealta"]==1) {
+                                                ?> <a href="./?servicios=Diseño_De_Paginas_web&solicitud=plan-medium"><?php 
+                                            }else{ 
                                             ?> <a href="./?:=serviceResp8/8800/22/s-act_n8ll"> <?php 
+                                            }
                                         }
-                                     ?>    
+                                     ?>
+                                   
 
 
                                         <div class="card-header primary-color white-text">
@@ -164,11 +179,13 @@ foreach ($PlanPremium as $pp) {
                                         </div>
 
                                     </div>
+                                            <?php 
 
-                                    
-
-                                                <?php 
-                                                    if ($user_["dealta"]==1) 
+                                                if (!isset($_SESSION["user_log"])) {
+                                                    ?>
+                                                     <a href="./?servicios=Diseño_De_Paginas_web&solicitud=plan-medium"><button class="btn boton-c btn-md">Solicitar</button></a>
+                                                    <?php 
+                                                }else if ($user_["dealta"]==1) 
                                                     {
                                                         ?>
                                                         <a href="./?servicios=Diseño_De_Paginas_web&solicitud=plan-medium"><button class="btn boton-c btn-md">Solicitar</button></a>
@@ -179,6 +196,9 @@ foreach ($PlanPremium as $pp) {
                                                         <?php 
                                                     }
                                                  ?>
+                                    
+
+                                                
 
 
                                 </div>
@@ -187,14 +207,18 @@ foreach ($PlanPremium as $pp) {
                         <div class="col-12 col-sm-6 col-md-4 mt-5 mb-5  wow zoomIn" data-wow-delay="0.4s">
                             <div align="center">
                                 <div class="card">
-                                    
-                                    <?php 
-                                        if ($user_["dealta"]==1) {
+                                     <?php 
+                                        if ( !isset($_SESSION["user_log"])  ) {
                                             ?> <a href="./?servicios=Diseño_De_Paginas_web&solicitud=plan-premium"><?php 
                                         }else{
+                                            if ($user_["dealta"]==1) {
+                                                ?> <a href="./?servicios=Diseño_De_Paginas_web&solicitud=plan-premium"><?php 
+                                            }else{ 
                                             ?> <a href="./?:=serviceResp8/8800/22/s-act_n8ll"> <?php 
+                                            }
                                         }
-                                     ?> 
+                                     ?>
+                                    
                                         <div class="card-header stylish-color white-text">
                                         <!--h4>PLAN PREMIUM</h4-->
                                         <span class="h2-responsive m-0">PLAN PREMIUM</span>
@@ -255,7 +279,12 @@ foreach ($PlanPremium as $pp) {
                                                 
 
                                                 <?php 
-                                                    if ($user_["dealta"]==1) 
+
+                                                if (!isset($_SESSION["user_log"])) {
+                                                    ?>
+                                                     <a href="./?servicios=Diseño_De_Paginas_web&solicitud=plan-premium"><button class="btn boton-c btn-md">Solicitar</button></a>
+                                                    <?php 
+                                                }else if ($user_["dealta"]==1) 
                                                     {
                                                         ?>
                                                         <a href="./?servicios=Diseño_De_Paginas_web&solicitud=plan-premium"><button class="btn boton-c btn-md">Solicitar</button></a>

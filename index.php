@@ -114,9 +114,7 @@ switch (@$_GET["servicios"])
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="theme-color" content="#ff3a5f">
     <!-- tags Google -->
-    <meta itemprop="description" content="Somos una empresa colombiana cuyo objetivo principal es 
-    trabajar con TICs (Tecnologias de la Información y las Comunicaciones) desarrollando mejores 
-    herramientas que facilitan el trabajo diario de cualquier empresa."/>
+    
     <!-- og tags principales -->
     <?php 
     if (!isset($_GET[':']) ) {

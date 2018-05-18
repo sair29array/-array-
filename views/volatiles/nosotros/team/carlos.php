@@ -41,24 +41,13 @@
            
             <p class="text-justify">
                 Carlos es el responsable de todo el diseño web dentro de Array, esto incluye la apariencia
-                    de todos los sitios y aplicaciones web que son desarrollados, es estudiante de Lic. En informática
-                    y medios audiovisuales de la Universidad de Córdoba, ubicada en Montería - Colombia. Carlos es un apasionado por el desarrollo Frontend, Siempre busca estar a la vanguardia de las tecnologías y herramientas para el diseño y desarrollo web.
-
-               
-
-
+                    de todos los sitios y aplicaciones web que son desarrollados. Carlos es un apasionado por el desarrollo Frontend, Siempre busca estar a la vanguardia de las tecnologías y herramientas para el diseño y desarrollo web.
+                    En ArrayFrontend dirige investigaciones y nuevos proyectos que mejoran el aspecto de nuestras aplicaciones web.
             </p>
             
           </div>
         </div>
-            <p class="text-justify">
-            	  
-
-               
-                    Motivado por Sair Sánchez (Director general y fundador de Array) comienza a trabajar en la construcción de array,
-                    siempre en la búsqueda del buen uso de las Tics.
-
-            </p>
+           
       </div>
     </div>
   </div>

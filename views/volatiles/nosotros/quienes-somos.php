@@ -15,22 +15,14 @@
                                 <strong>Misión</strong>
                             </h1>
                             <p class="m-4 d-none d-md-block">
-                                <strong>Proveer soluciones basadas en las TIC´s a necesidades que surgen en el ámbito de la informática, utilizando la programación de sistemas, la producción 
-                                audiovisual y el soporte tecnico, los cuales son aptitudes del talento humano que posee nuestra empresa, comprometidos con la calidad
-                                y el cumplimiento eficaz y eficeinte para corroborar con la productividad de nuestros clientes.</strong>
+                                <strong>Proveer soluciones elaboradas con Tecnologías de la Información y las Comunicaciones que resuelvan necesidades que surgen en diversas organizaciones, utilizando la programación de sistemas, la producción 
+                                audiovisual y el soporte técnico, los cuales son aptitudes del talento humano que posee nuestra empresa, comprometidos con la calidad y el cumplimiento eficaz y eficiente para apoyar la productividad de nuestros clientes.
+                            </strong>
                             </p>
-                            <div class="row justify-content-center">
-                                <div class="col-2">
-                                <a  href="#team" class="btn boton-c btn-md d-none d-sm-none d-md-block">Saber más
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
-                                
-                                </div>
-                                
-                            </div>
+                            
                             <div class="row justify-content-center">
                             <div class="col-8 text-center">
-                                <a  href="#section-m-v" class="btn boton-c btn-md d-block d-sm-block d-md-none">Saber más
+                                <a  href="#section-m-v" class="btn boton-c btn-md d-block d-sm-block d-md-none">Ver
                                     <i class="fas fa-chevron-right"></i>
                                 </a>
                                 </div>
@@ -53,22 +45,12 @@
                                 <strong>Visión</strong>
                             </h1>
                             <p class="m-4 d-none d-md-block">
-                                <strong>Ser una de las compañias más importantes en el departamento de Córdoba, preferida por la calidad en nuestra prestación de 
-                                servicios y productos en el ámbito de la informática, especializada en dar soluciones a través de la investigación e innovación, abarcando todos los 
-                                sectores de la sociedad actual.</strong>
+                                <strong>Ser una de las compañías más importantes en el departamento de Córdoba, preferida por la calidad en nuestra prestación de servicios y productos en el ámbito de la informática, especializada en dar soluciones a través de la investigación e innovación, abarcando todos los sectores de la sociedad actual.</strong>
                             </p>
-                            <div class="row justify-content-center">
-                                <div class="col-2">
-                                <a  href="#team" class="btn boton-c btn-md d-none d-sm-none d-md-block">Saber más
-                                    <i class="fas fa-chevron-right"></i>
-                                </a>
-                                
-                                </div>
-                                
-                            </div>
+                           
                             <div class="row justify-content-center">
                             <div class="col-8 text-center">
-                                <a  href="#section-m-v" class="btn boton-c btn-md d-block d-sm-block d-md-none">Saber más
+                                <a  href="#section-m-v" class="btn boton-c btn-md d-block d-sm-block d-md-none">Ver
                                     <i class="fas fa-chevron-right"></i>
                                 </a>
                                 </div>
@@ -101,14 +83,13 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-7 text-justify wow fadeInUp" data-wow-delay="0.3s">
                     <h1 class="h1-responsive mb-2 mt-0 text-center blue-text">Somos expertos en TIC</h1>
-                    <p>Somos una empresa colombiana cuyo objetivo principal es trabajar con TICs (Tecnologias de la Información y las Comunicaciones) desarrollando mejores herramientas que facilitan el trabajo diario de cualquier empresa.
+                    <p>Somos una empresa colombiana cuyo objetivo principal es trabajar con TIC (Tecnologías de la Información y las Comunicaciones) desarrollando mejores herramientas que facilitan el trabajo diario de cualquier empresa.
+                    Creamos herramientas que ayudan a mejorar las tareas diarias de muchas empresas.
+                    Brindamos excelentes servicios con calidad y cumplimiento, realmente amamos lo que hacemos y nuestro trabajo en cada proyecto verdaderamente refleja eso.
                     </p>
-                    <p>Creamos herramientas que ayudan a mejorar las tareas diarias de muchas empresas, generamos contenido públicitario para que las propuestas de negocios de nuestros clientes tengan una amplia cobertura y mayores ingresos.
-                    </p >
-                    <p>Brindamos excelentes servicios con cálidad y cumplimiento, llegando hasta la puerta de su casa o empresa, Realmente amamos lo que hacemos y nuestro trabajo en cada proyecto verdaderamente refelja eso.</p>
                     <div class="text-center">
                     <a href="#nuestro-equipo">
-                        <button type="button" class="btn boton-c btn-lg mb-5">Nuestro Equipo
+                        <button type="button" class="btn boton-c btn-lg mb-5">Nuestro Equipo 
                             <i class="fa fa-angle-down"></i>
                         </button>
                     </a></div>
@@ -123,18 +104,18 @@
         <div class="container" id="nuestro-equipo">
             <div class="row justify-content-center">
                 <div class="col-12 text-center wow fadeInDown" data-wow-delay="0.4s">
-                    <h1 class="h1-responsive divider-new">NUESTRO EQUIPO</h1>
+                    <h3 class="h3-responsive divider-new">LIDERAZGO DE ARRAY</h3>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 wow zoomIn mt-4" data-wow-delay="0.4s">
                     <div class="text-center">
                        <a class="text-white" data-toggle="modal" data-target="#modalSair" > <img class="img im-fluid img-team" src="img/team/sair.jpg" alt="array" title="Sair Sanchez">
                         <h5>Sair Sánchez</h5>
-                        <p>CEO & director de ArrayDev. </p></a>
+                        <p>Fundador y CEO. </p></a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 wow zoomIn mt-4" data-wow-delay="0.5s">
                     <div class="text-center">
-                        <a class="text-white" href=""><img class="img im-fluid img-team" src="img/team/eric.jpg" alt="array" title="Eric Martinez">
+                        <a class="text-white" data-toggle="modal"  data-target="#modalEric" ><img class="img im-fluid img-team" src="img/team/eric.jpg" alt="array" title="Eric Martinez">
                         <h5>Eric Martinez</h5>
                         <p>Cofundador & Director de ArrayInnovation.</p></a>
                     </div>
@@ -148,24 +129,24 @@
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 wow zoomIn mt-4" data-wow-delay="0.7s">
                     <div class="text-center ">
-                        <a class="text-white" href=""><img class="img im-fluid img-team" src="img/team/ProfSandra.jpg" alt="array" title="Sandra Diaz">
+                        <a class="text-white" data-toggle="modal" data-target="#modalsandra"><img class="img im-fluid img-team" src="img/team/ProfSandra.jpg" alt="array" title="Sandra Diaz">
                         <h5>Sandra Diaz</h5>
-                        <p>Asesora - Idea de negocio.</p></a>
+                        <p>Vicepresidente y concejera general.</p></a>
                     </div>
                 </div>
                 
                 <div class="col-12 col-sm-6 col-md-4 wow zoomIn mt-4" data-wow-delay="0.7s">
                     <div class="text-center ">
-                        <a class="text-white" href=""><img class="img im-fluid img-team" src="img/team/duvan.jpg" alt="array" title="Duvan Ricardo">
+                        <a class="text-white" data-toggle="modal" data-target="#modalDuvan"><img class="img im-fluid img-team" src="img/team/duvan.jpg" alt="array" title="Duvan Ricardo">
                         <h5>Duvan Ricardo</h5>
                         <p>Director de ArrayDesign y comunicación visual.</p></a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 wow zoomIn mt-4" data-wow-delay="0.7s">
                     <div class="text-center ">
-                        <a class="text-white" href=""><img class="img im-fluid img-team" src="img/team/daniel.jpg" alt="array" title="Daniel Martinez">
+                        <a class="text-white" data-toggle="modal" data-target="#modalDaniel"><img class="img im-fluid img-team" src="img/team/daniel.jpg" alt="array" title="Daniel Martinez">
                         <h5>Daniel Martinez</h5>
-                        <p>Director de ArrayAudioVisual.</p></a>
+                        <p>Director de ArrayMarketing.</p></a>
                     </div>
                 </div>
             </div>
@@ -181,15 +162,14 @@
             </div>
             <div class="row justify-content-center">
             <div class="col-11 mt-5 wow zoomIn" data-wow-delay="0.6s">
-                    <h1 class="h1-responsive title-vision-mision text-center blue-text">Misión <i class="fas fa-cogs"></i></h1>
-                    <p class="lead text-justify">Proveer soluciones basadas en las TIC´s a necesidades que surgen en el ambito de la informatica, utilizando la programación de sistemas, la producción audiovisual y el soporte tecnico, los cuales son aptitudes del talento humano que posee nuestra empresa,
-                    comprometidos con la calidady el cumplimiento eficaz y eficeinte para corroborar con la productividad de nuestros clientes.</p>
+                    <h2 class="h1-responsive title-vision-mision text-center blue-text">Misión <i class="fas fa-cogs"></i></h2>
+                    <p class="lead text-justify">Proveer soluciones elaboradas con Tecnologías de la Información y las Comunicaciones que resuelvan necesidades que surgen en diversas organizaciones, utilizando la programación de sistemas, la producción 
+                                audiovisual y el soporte técnico, los cuales son aptitudes del talento humano que posee nuestra empresa, comprometidos con la calidad y el cumplimiento eficaz y eficiente para apoyar la productividad de nuestros clientes.</p>
                     <hr>
                 </div>
                 <div class="col-11 mt-5 wow zoomIn" data-wow-delay="0.5s">
-                    <h1 class="h1-responsive title-vision-mision blue-text text-center">Visión <i class="fas fa-eye"></i></h1>
-                    <p class="lead text-justify">Ser una de las compañias mas importantes en el Córdoba, preferida por la calidad en nuestra prestacion de servicios y productos en el 
-                    ambito de la informatica, especializada en dar soluciones a traves de la investigacion e innovacion, abarcando todos los sectores de la sociedad actual.</p>
+                    <h2 class="h1-responsive title-vision-mision blue-text text-center">Visión <i class="fas fa-eye"></i></h2>
+                    <p class="lead text-justify">Ser una de las compañías más importantes en el departamento de Córdoba, preferida por la calidad en nuestra prestación de servicios y productos en el ámbito de la informática, especializada en dar soluciones a través de la investigación e innovación, abarcando todos los sectores de la sociedad actual.</p>
                     <hr>
                 </div>
                 
@@ -202,5 +182,9 @@
     /////////////////TEAM ARRAY ////////////////
 include("views/volatiles/nosotros/team/sair.php");
 include("views/volatiles/nosotros/team/carlos.php");
+include("views/volatiles/nosotros/team/eric.php");
+include("views/volatiles/nosotros/team/sandra.php");
+include("views/volatiles/nosotros/team/duvan.php");
+include("views/volatiles/nosotros/team/daniel.php");
 
  ?>

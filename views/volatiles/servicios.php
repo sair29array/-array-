@@ -3,9 +3,9 @@
    <section class="servicios">
         <div class="container">
             <div class="row justify-content-center blue-text">
-            <div class="col-12 text-center mt-5 mb-4 wow zoomIn" data-wow-delay="0.4s">
-                <h1 class="h1-responsive mb-0"><strong>Nuestros servicios</strong></h1>
-                <h6 class="h6-responsive white-text">Te ofrecemos calidad y cumplimiento en cada uno de nuestros servicios.</h6>
+            <div class=" col-12 text-center mt-5 mb-4 wow zoomIn " data-wow-delay="0.4s">
+                <h2 class="h2-responsive mb-0"><strong>Ayudamos a las empresas a modernizar sus herramientas de trabajo y a realizar su transformación digital.</strong></h2>
+                
             </div>
                 <div class="tarjeta-wrap wow zoomIn" data-wow-delay="0.3s">
                     <div class="tarjeta">
